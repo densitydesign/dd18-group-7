@@ -5,6 +5,6 @@ import "../scss/styles.scss";
 import * as bootstrap from "bootstrap";
 
 // Import do-slide's JS
-// import * as doslide from "do-slide";
+import DoSlide from "do-slide";
 
-var slide = new DoSlide(".ds-container");
+const slide = new DoSlide(".ds-container");

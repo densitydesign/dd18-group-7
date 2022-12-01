@@ -2,15 +2,9 @@ const path = require("path");
 
 module.exports = {
   mode: "development",
-  // entry: './src/js/index.js',
-  entry: {
-    doslide: "./node_modules/do-slide/dist/do-slide.min.js",
-    index: {
-      dependOn: "doslide",
-      import: "./src/js/index.js",
-  },
+  entry: "./src/js/index.js",
   output: {
-    filename: "[name].js",
+    filename: "index.js",
     path: path.resolve(__dirname, "dist"),
   },
   devServer: {
