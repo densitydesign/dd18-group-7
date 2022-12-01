@@ -3,6 +3,9 @@
 // Import all of Bootstrap's CSS
 @import "~bootstrap/scss/bootstrap";
 
+// Import do-slide's CSS
+@import url("~do-slide/dist/do-slide.min.css");
+
 // Custom styles
 body {
   margin: 0;
