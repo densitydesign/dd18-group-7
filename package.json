@@ -7,16 +7,19 @@
     "startCommand": "npm start"
   },
   "scripts": {
-    "start": "webpack serve",
-    "build": "webpack -w"
+    "start": "webpack serve --mode development",
+    "build": "webpack -w",
+    "deploy": "node node_modules/gh-pages/bin/gh-pages.js -d dist/"
   },
   "dependencies": {
     "@popperjs/core": "^2.11.6",
-    "bootstrap": "^5.2.0"
+    "bootstrap": "^5.2.0",
+    "do-slide": "^1.1.4"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.8",
     "css-loader": "^6.7.1",
+    "gh-pages": "^4.0.0",
     "postcss-loader": "^7.0.1",
     "sass": "^1.54.8",
     "sass-loader": "^13.0.2",
