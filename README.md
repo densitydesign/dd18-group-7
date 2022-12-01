@@ -1,16 +1,5 @@
-# Bootstrap w/ Webpack
+# An highway to greenness. Analysing green narratives in car brands' adverts
 
-Include [Bootstrap](https://getbootstrap.com)'s source Sass and individual JavaScript plugins with [Webpack](https://webpack.js.org).
+Phase 2.2 · Data Publics[^1].
 
-## Edit in browser
-
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/twbs/examples/tree/main/webpack?file=index.html)
-
-## How to use
-
-```sh
-git clone https://github.com/twbs/examples.git
-cd examples/webpack/
-npm install
-npm start
-```
+[^1]: Project made during the DensityDesign Final Synthesis Design Studio at the Polytechnic University of Milan
