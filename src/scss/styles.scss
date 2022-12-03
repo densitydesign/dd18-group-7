@@ -7,6 +7,25 @@
 @import url("~do-slide/dist/do-slide.min.css");
 
 // Custom styles
+// Variable font
+@font-face {
+  font-family: "Favorit Variable";
+  src: url("../fonts/ABCFavoritVariable-Trial.woff2") format("woff2-variations"),
+    url("../fonts/ABCFavoritVariable-Trial.woff") format("woff-variations");
+}
+
+// Fallback static font
+@font-face {
+  font-family: "Favorit";
+  font-weight: normal;
+  src: url("../fonts/ABCFavorit-Regular-Trial.woff2") format("woff2"),
+    url("../fonts/ABCFavorit-Regular-Trial.woff") format("woff");
+}
+
+* {
+  font-family: "Favorit Variable", "Favorit", sans-serif;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -17,4 +36,14 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
+}
+
+.variable-h1 {
+  font-family: "Favorit Variable";
+  font-variation-settings: "wght" 300, "ital" 0;
+  transition: font-variation-settings 0.3s ease;
+}
+
+.variable-h1:hover {
+  font-variation-settings: "wght" 700, "ital" 12;
 }
