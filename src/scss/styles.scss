@@ -34,6 +34,15 @@ body {
   color: $light;
 }
 
+.navbar {
+  &.fixed-top {
+    border-bottom: 1px solid $light;
+  }
+  &.fixed-bottom {
+    border-top: 1px solid $light;
+  }
+}
+
 .wrap {
   position: absolute;
   width: 100%;

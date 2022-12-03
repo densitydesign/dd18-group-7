@@ -8,5 +8,5 @@ import * as bootstrap from "bootstrap";
 import DoSlide from "do-slide";
 
 const slide = new DoSlide(".ds-container", {
-  horizontal: true,
+  horizontal: false,
 });
