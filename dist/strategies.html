@@ -48,20 +48,23 @@
           <section
             class="d-flex justify-content-center align-items-center py-6 p-lg-0"
           >
-            <div class="container">
-              <div class="row d-flex align-items-center">
-                <div class="col-12">
-                  <h1 class="display-1 text-center variable-h1">
-                    Idealised landscapes
-                  </h1>
-                  <p class="display-6">
-                    This strategy is about framing the vehicle in stereotypical
-                    or de-anthropised environments that range from natural, wild
-                    and adventurous landscapes to futuristic or urbanised
-                    settings, which are often devoid of people.
-                  </p>
+            <div class="container-fluid" id="idealised-landscapes">
+              <!-- <div class="container">
+                <div class="row d-flex align-items-center">
+                  <div class="col-12">
+                    <h1 class="display-1 text-center variable-h1">
+                      Idealised landscapes
+                    </h1>
+                    <p class="display-6">
+                      This strategy is about framing the vehicle in
+                      stereotypical or de-anthropised environments that range
+                      from natural, wild and adventurous landscapes to
+                      futuristic or urbanised settings, which are often devoid
+                      of people.
+                    </p>
+                  </div>
                 </div>
-              </div>
+              </div> -->
             </div>
           </section>
           <section
@@ -105,10 +108,31 @@
           <section
             class="d-flex justify-content-center align-items-center py-6 p-lg-0"
           >
-            <div class="container">
+            <div class="container-fluid">
               <div class="row d-flex align-items-center">
-                <div class="col-12">
-                  <h1 class="display-1 text-center variable-h1">
+                <div class="col-12 col-lg-6">
+                  <div class="ratio ratio-16x9">
+                    <video preload muted autoplay loop playsinline>
+                      <source
+                        src="./assets/videos/vehicles.mp4"
+                        type="video/mp4"
+                      />
+                      Your browser doesn't support the video tag.
+                    </video>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                  <div class="ratio ratio-16x9">
+                    <video preload muted autoplay loop playsinline>
+                      <source
+                        src="./assets/videos/metaphors.mp4"
+                        type="video/mp4"
+                      />
+                      Your browser doesn't support the video tag.
+                    </video>
+                  </div>
+                </div>
+                <!-- <h1 class="display-1 text-center variable-h1">
                     Green metaphors
                   </h1>
                   <p class="display-6">
@@ -117,7 +141,7 @@
                     to nature—from animals to natural phenomena—and its driving
                     to sports activities carried out in nature.
                   </p>
-                </div>
+                </div> -->
               </div>
             </div>
           </section>
@@ -143,7 +167,7 @@
         </div>
       </div>
     </main>
-    <!-- <script src="./doslide.js"></script> -->
     <script src="./index.js"></script>
+    <script src="./idealisedLandscapes.js"></script>
   </body>
 </html>
