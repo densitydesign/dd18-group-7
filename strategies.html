@@ -109,8 +109,11 @@
             class="d-flex justify-content-center align-items-center py-6 p-lg-0"
           >
             <div class="container-fluid">
-              <div class="row d-flex align-items-center">
-                <div class="col-12 col-lg-6">
+              <div class="row d-flex align-items-center green-metaphors">
+                <div
+                  class="col-12 col-lg-6 mb-3 mb-lg-0"
+                  id="green-metaphors-vehicles"
+                >
                   <div class="ratio ratio-16x9">
                     <video preload muted autoplay loop playsinline>
                       <source
@@ -121,7 +124,7 @@
                     </video>
                   </div>
                 </div>
-                <div class="col-12 col-lg-6">
+                <div class="col-12 col-lg-6" id="green-metaphors-metaphors">
                   <div class="ratio ratio-16x9">
                     <video preload muted autoplay loop playsinline>
                       <source
@@ -166,7 +169,19 @@
           </section>
         </div>
       </div>
+
+      <nav class="navbar fixed-bottom navbar-dark bg-dark">
+        <div class="container-fluid">
+          <div class="col-12 col-lg-6">
+            <p class="lead mb-0">[description]</p>
+          </div>
+          <div class="col-12 col-lg-6">
+            <p class="lead mb-0">[tag]</p>
+          </div>
+        </div>
+      </nav>
     </main>
+
     <script src="./index.js"></script>
     <script src="./idealisedLandscapes.js"></script>
   </body>
