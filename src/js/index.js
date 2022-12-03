@@ -7,4 +7,6 @@ import * as bootstrap from "bootstrap";
 // Import do-slide's JS
 import DoSlide from "do-slide";
 
-const slide = new DoSlide(".ds-container");
+const slide = new DoSlide(".ds-container", {
+  horizontal: true,
+});
