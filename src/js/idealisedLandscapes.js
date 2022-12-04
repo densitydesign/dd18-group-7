@@ -2,47 +2,38 @@ import * as p5 from "p5";
 
 //a P5 moire pattern.
 let s = (sk) => {
-  let privacyStatementP5;
+  let privacyStatementP5 = sk.select(".privacyStatement");
   let privacyStatementJS;
   let privacyStatementBoundingClientRect;
   let privacyStatementBoundingClientRectBottom;
   let difference;
-  let posY;
+  let posX;
 
   sk.setup = () => {
     sk.createCanvas(window.innerWidth, window.innerHeight).parent(
       "idealised-landscapes"
     );
-
-    // styling
-    sk.noFill();
-    sk.rectMode(sk.CENTER);
-    sk.strokeWeight(1);
-    sk.stroke(255);
-
+    privacyStatementP5.position(0, 0);
     sk.getDivAndCanvas();
   };
 
   sk.draw = () => {
     sk.clear();
-    sk.line(0, 0, sk.width, sk.height);
-    sk.line(sk.width, 0, 0, sk.height);
-
-    privacyStatementP5 = sk.select(".privacyStatement");
 
     // div animation
     if (sk.width > sk.height) {
       // horizontal viewport
-      posY = difference * Math.pow(sk.sin((sk.frameCount / sk.width) * 4), 2);
+      posX = difference * Math.pow(sk.sin((sk.frameCount / sk.width) * 4), 2);
     } else {
       // vertical viewport
-      posY = difference * Math.pow(sk.sin(sk.frameCount / sk.height / 2), 2);
+      posX = difference * Math.pow(sk.sin((sk.frameCount / sk.width) * 2), 2);
     }
-    privacyStatementP5.position(0, -posY);
+    privacyStatementP5.position(-posX, 0);
+    // privacyStatementP5.position(0, 0);
   };
 
   sk.windowResized = () => {
-    resizeCanvas(sk.windowWidth, sk.windowHeight);
+    sk.resizeCanvas(sk.windowWidth, sk.windowHeight);
 
     // reset the position of #privacyStatement
     privacyStatementP5.position(0, 0);
@@ -55,8 +46,10 @@ let s = (sk) => {
     privacyStatementBoundingClientRect =
       privacyStatementJS.getBoundingClientRect();
     privacyStatementBoundingClientRectBottom =
-      privacyStatementBoundingClientRect.bottom;
-    difference = privacyStatementBoundingClientRectBottom - sk.height;
+      privacyStatementBoundingClientRect.right;
+    console.log(privacyStatementBoundingClientRect);
+    difference = privacyStatementBoundingClientRectBottom - sk.width;
+    console.log(difference);
   };
 };
 

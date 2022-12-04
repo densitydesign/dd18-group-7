@@ -91,23 +91,12 @@ canvas {
 .privacyStatement.show {
   /* position, dimensions */
   position: absolute;
-  width: 100%;
+  width: 300%;
+  height: 100%;
   top: 0px;
   /* behavioral settings */
   display: inline;
   opacity: 100%;
-  /* animations */
-  transition: opacity 0.5s ease-in-out;
-}
-
-.privacyStatement.hide {
-  /* position, dimensions */
-  position: absolute;
-  width: 100%;
-  top: 0px;
-  /* behavioral settings */
-  display: inline;
-  opacity: 0%;
   /* animations */
   transition: opacity 0.5s ease-in-out;
 }
