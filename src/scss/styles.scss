@@ -1,77 +1,270 @@
+// Fonts
+
+// Review
+@font-face {
+  font-family: "Review Thin";
+  src: url("../fonts/Review\ Family/Review-Thin-Trial.otf") format("opentype");
+}
+@font-face {
+  font-family: "Review Thin Italic";
+  src: url("../fonts/Review\ Family/Review-ThinItalic-Trial.otf")
+    format("opentype");
+}
+@font-face {
+  font-family: "Review Light";
+  src: url("../fonts/Review\ Family/Review-Light-Trial.otf") format("opentype");
+}
+@font-face {
+  font-family: "Review Light Italic";
+  src: url("../fonts/Review\ Family/Review-LightItalic-Trial.otf")
+    format("opentype");
+}
+@font-face {
+  font-family: "Review Regular";
+  src: url("../fonts/Review\ Family/Review-Regular-Trial.otf")
+    format("opentype");
+}
+@font-face {
+  font-family: "Review Regular Italic";
+  src: url("../fonts/Review\ Family/Review-RegularItalic-Trial.otf")
+    format("opentype");
+}
+@font-face {
+  font-family: "Review Medium";
+  src: url("../fonts/Review\ Family/Review-Medium-Trial.otf") format("opentype");
+}
+@font-face {
+  font-family: "Review Medium Italic";
+  src: url("../fonts/Review\ Family/Review-MediumItalic-Trial.otf")
+    format("opentype");
+}
+@font-face {
+  font-family: "Review Bold";
+  src: url("../fonts/Review\ Family/Review-Bold-Trial.otf") format("opentype");
+}
+@font-face {
+  font-family: "Review Bold Italic";
+  src: url("../fonts/Review\ Family/Review-BoldItalic-Trial.otf")
+    format("opentype");
+}
+@font-face {
+  font-family: "Review Heavy";
+  src: url("../fonts/Review\ Family/Review-Heavy-Trial.otf") format("opentype");
+}
+@font-face {
+  font-family: "Review Heavy Italic";
+  src: url("../fonts/Review\ Family/Review-HeavyItalic-Trial.otf")
+    format("opentype");
+}
+@font-face {
+  font-family: "Review Black";
+  src: url("../fonts/Review\ Family/Review-Black-Trial.otf") format("opentype");
+}
+@font-face {
+  font-family: "Review Black Italic";
+  src: url("../fonts/Review\ Family/Review-BlackItalic-Trial.otf")
+    format("opentype");
+}
+
+// Atlas Typewriter
+@font-face {
+  font-family: "Atlas Typewriter Thin";
+  src: url("../fonts/Atlas\ Typewriter\ Family/AtlasTypewriter-Thin-Trial.otf")
+    format("opentype");
+}
+@font-face {
+  font-family: "Atlas Typewriter Thin Italic";
+  src: url("../fonts/Atlas\ Typewriter\ Family/AtlasTypewriter-ThinItalic-Trial.otf")
+    format("opentype");
+}
+@font-face {
+  font-family: "Atlas Typewriter Light";
+  src: url("../fonts/Atlas\ Typewriter\ Family/AtlasTypewriter-Light-Trial.otf")
+    format("opentype");
+}
+@font-face {
+  font-family: "Atlas Typewriter Light Italic";
+  src: url("../fonts/Atlas\ Typewriter\ Family/AtlasTypewriter-LightItalic-Trial.otf")
+    format("opentype");
+}
+@font-face {
+  font-family: "Atlas Typewriter Regular";
+  src: url("../fonts/Atlas\ Typewriter\ Family/AtlasTypewriter-Regular-Trial.otf")
+    format("opentype");
+}
+@font-face {
+  font-family: "Atlas Typewriter Regular Italic";
+  src: url("../fonts/Atlas\ Typewriter\ Family/AtlasTypewriter-RegularItalic-Trial.otf")
+    format("opentype");
+}
+@font-face {
+  font-family: "Atlas Typewriter Medium";
+  src: url("../fonts/Atlas\ Typewriter\ Family/AtlasTypewriter-Medium-Trial.otf")
+    format("opentype");
+}
+@font-face {
+  font-family: "Atlas Typewriter Medium Italic";
+  src: url("../fonts/Atlas\ Typewriter\ Family/AtlasTypewriter-MediumItalic-Trial.otf")
+    format("opentype");
+}
+@font-face {
+  font-family: "Atlas Typewriter Bold";
+  src: url("../fonts/Atlas\ Typewriter\ Family/AtlasTypewriter-Bold-Trial.otf")
+    format("opentype");
+}
+@font-face {
+  font-family: "Atlas Typewriter Bold Italic";
+  src: url("../fonts/Atlas\ Typewriter\ Family/AtlasTypewriter-BoldItalic-Trial.otf")
+    format("opentype");
+}
+@font-face {
+  font-family: "Atlas Typewriter Black";
+  src: url("../fonts/Atlas\ Typewriter\ Family/AtlasTypewriter-Black-Trial.otf")
+    format("opentype");
+}
+@font-face {
+  font-family: "Atlas Typewriter Black Italic";
+  src: url("../fonts/Atlas\ Typewriter\ Family/AtlasTypewriter-BlackItalic-Trial.otf")
+    format("opentype");
+}
+
 // Bootstrap overrides
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * 0.25,
+  2: $spacer * 0.5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  6: $spacer * 6,
+);
+
+$display-font-sizes: (
+  11: 10rem,
+  12: 9.5rem,
+  13: 9rem,
+  14: 8.5rem,
+  15: 8rem,
+  16: 7.5rem,
+  17: 7rem,
+  18: 6.5rem,
+  19: 6rem,
+  10: 5.5rem,
+  1: 5rem,
+  2: 4.5rem,
+  3: 4rem,
+  4: 3.5rem,
+  5: 3rem,
+  6: 2.5rem,
+  7: 2rem,
+  8: 1.5rem,
+  9: 1rem,
+);
+
+$display-font-family: "Review Medium";
 
 // Import all of Bootstrap's CSS
 @import "~bootstrap/scss/bootstrap";
 
 // Import do-slide's CSS
-@import url("~do-slide/dist/do-slide.min.css");
+@import "~do-slide/dist/do-slide.min.css";
+
+// import material symbols
+@import "~material-symbols/sharp.css";
 
 // Custom styles
-// Variable font
-@font-face {
-  font-family: "Favorit Variable";
-  src: url("../fonts/ABCFavoritVariable-Trial.woff2") format("woff2-variations"),
-    url("../fonts/ABCFavoritVariable-Trial.woff") format("woff-variations");
-}
-
-// Fallback static font
-@font-face {
-  font-family: "Favorit";
-  font-weight: normal;
-  src: url("../fonts/ABCFavorit-Regular-Trial.woff2") format("woff2"),
-    url("../fonts/ABCFavorit-Regular-Trial.woff") format("woff");
-}
-
 * {
-  font-family: "Favorit Variable", "Favorit", sans-serif;
+  font-family: "Review Regular", sans-serif;
 }
 
 body {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: $dark;
-  color: $light;
+  background-color: $black;
+  color: $white;
 }
 
 .navbar {
-  &.fixed-top {
-    border-bottom: 1px solid $light;
-  }
-  &.fixed-bottom {
-    border-top: 1px solid $light;
+  background-color: transparent;
+  transition: background 125ms ease-in-out;
+}
+
+.navbar-border {
+  background-color: $black;
+  border-bottom: 1px solid $white;
+  transition: background 125ms ease-in-out;
+}
+
+.nav-link,
+.navbar-brand {
+  font-family: "Atlas Typewriter Regular", monospace;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  &.active {
+    font-family: "Atlas Typewriter Bold", monospace;
   }
 }
 
-.wrap {
+.navbar-toggler {
+  color: $white;
+  border: none;
+  outline: none;
+  &:focus,
+  &:active,
+  &-icon:focus {
+    outline: none;
+    box-shadow: none;
+  }
+}
+
+.wrap,
+.fullscreen-video-container,
+.fullscreen-text-container {
   position: absolute;
   width: 100%;
   height: 100%;
 }
 
-.variable-h1 {
-  font-family: "Favorit Variable";
-  font-variation-settings: "wght" 300, "ital" 0;
-  transition: font-variation-settings 0.3s ease;
+.fullscreen-video-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    0deg,
+    $black 0%,
+    $black 2.5%,
+    rgba(255, 0, 0, 0) 100%
+  );
 }
 
-.variable-h1:hover {
-  font-variation-settings: "wght" 700, "ital" 12;
+.fullscreen-video-container {
+  z-index: -10;
+}
+
+.fullscreen-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.difference {
+  mix-blend-mode: difference;
 }
 
 canvas {
-  /* behavioral settings */
   display: block;
 }
 
 .loadingclass {
-  /* position, dimensions */
   position: absolute;
   width: 100%;
   height: 100%;
-  /* behavioral settings */
   overflow: hidden;
-  /* styles, colours */
   background-color: transparent;
 }
 

@@ -15,6 +15,7 @@
     "@popperjs/core": "^2.11.6",
     "bootstrap": "^5.2.0",
     "do-slide": "^1.1.4",
+    "material-symbols": "^0.4.2",
     "p5": "^1.5.0",
     "three": "^0.147.0"
   },
