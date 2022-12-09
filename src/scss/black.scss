@@ -182,8 +182,8 @@ body {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: $black;
-  color: $white;
+  background-color: $white;
+  color: $black;
 }
 
 .navbar {
@@ -221,7 +221,8 @@ body {
 
 .wrap,
 .fullscreen-video-container,
-.fullscreen-text-container {
+.fullscreen-text-container,
+.fullscreen-flex-container {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -242,10 +243,6 @@ body {
   );
 }
 
-.fullscreen-video-container {
-  z-index: -10;
-}
-
 .fullscreen-video {
   width: 100%;
   height: 100%;
@@ -256,70 +253,17 @@ body {
   mix-blend-mode: difference;
 }
 
-canvas {
-  display: block;
-}
-
-.loadingclass {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  background-color: transparent;
-}
-
-#idealised-landscapes {
-  // position: relative;
-  // width: 100%;
-  // height: 100%;
-  // display: flex;
-  // align-items: center;
-  // justify-content: center;
-}
-
-.privacyStatement {
-  // position: absolute;
-  // display: inline-block;
-  // display: flex;
-  // flex-direction: column;
-  // flex-wrap: wrap;
-  display: grid;
-  grid-auto-flow: column;
-  grid-template-rows: repeat(1, 1fr);
-  grid-gap: 5px;
-  height: 100%;
-  width: max-content;
-  padding: 8%;
-  // border: 1px solid white;
-}
-
-.aspirina {
+.fullscreen-flex-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  width: max-content;
+  justify-content: space-between;
+  align-items: stretch;
 }
 
-.imstuff {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  height: 18%;
-  width: auto;
-  // max-height: 100%;
-  // max-width: 100%;
-  aspect-ratio: 16 / 9;
-  // border: 1px solid black;
-}
-
-.imagelandscape {
-  // aspect-ratio: 16 / 9;
-  // width: auto;
-  object-fit: contain;
-  max-height: 100%;
-  max-width: 100%;
-  border: 1px solid black;
+.btn-strategies {
+  border-top: 1px solid $black;
+  border-right: 0px;
+  border-bottom: 0px;
+  border-left: 0px;
+  border-radius: 0rem;
 }

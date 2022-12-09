@@ -3,8 +3,9 @@ const path = require("path");
 module.exports = {
   mode: "development",
   entry: {
-    index: "./src/js/index.js",
-    idealisedLandscapes: "./src/js/idealisedLandscapes.js",
+    black: "./src/js/black.js",
+    white: "./src/js/white.js",
+    // idealisedLandscapes: "./src/js/idealisedLandscapes.js",
   },
   output: {
     filename: "[name].js",

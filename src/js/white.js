@@ -1,5 +1,5 @@
 // Import custom CSS
-import "../scss/styles.scss";
+import "../scss/white.scss";
 
 // Import all of Bootstrap's JS
 import * as bootstrap from "bootstrap";
@@ -18,21 +18,6 @@ const navbarSupportedContent = document.getElementById(
   "navbar-supported-content"
 );
 
-// rip
-// if (navbarSupportedContent.classList.contains("collapsing")) {
-//   console.log("cagotto molle");
-//   navbar.classList.add("navbar-border");
-// } else if (
-//   navbarSupportedContent.classList.contains("collapse") &&
-//   navbarSupportedContent.classList.contains("show")
-// ) {
-//   console.log("caca");
-//   navbar.classList.add("navbar-border");
-// } else {
-//   navbar.classList.remove("navbar-border");
-// }
-
-// ok
 navbarSupportedContent.addEventListener("shown.bs.collapse", function () {
   navbar.classList.add("navbar-border");
 });
