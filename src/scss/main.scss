@@ -203,6 +203,10 @@ $display-font-family: "Review Medium";
   }
 }
 
+.t-overflow-hidden {
+  overflow: hidden;
+}
+
 .difference {
   mix-blend-mode: difference;
 }
@@ -211,10 +215,18 @@ $display-font-family: "Review Medium";
   font-family: "Review Regular", sans-serif;
 }
 
+html {
+  scrollbar-width: none;
+}
+
 body {
   margin: 0;
   padding: 0;
-  overflow: hidden;
+  -ms-overflow-style: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 .navbar {
