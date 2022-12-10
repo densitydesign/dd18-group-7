@@ -293,10 +293,24 @@ body::-webkit-scrollbar {
 }
 
 .fullscreen-flex-container-content {
+  position: absolute;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: stretch;
+}
+
+.btn-white-transparent {
+  @include button-variant($white, $black, $hover-background: transparent);
+  &.btn-strategy {
+    color: $white;
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 1px solid $black;
+    border-bottom: 0px;
+    border-radius: 0px;
+  }
 }
 
 .btn-outline-white {
@@ -305,11 +319,24 @@ body::-webkit-scrollbar {
 
 .btn-outline-black {
   @include button-outline-variant($black);
-  &.btn-strategy {
-    border-left: 0px;
-    border-right: 0px;
-    border-top: 1px solid $black;
-    border-bottom: 0px;
-    border-radius: 0rem;
-  }
+}
+
+.video-wrapper {
+  /* Telling our absolute positioned video to 
+  be relative to this element */
+  position: relative;
+
+  // width: 400px;
+  // height: 200px;
+
+  /* Will not allow the video to overflow the 
+  container */
+  overflow: hidden;
+
+  /* Centering the container's content vertically 
+  and horizontally */
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
