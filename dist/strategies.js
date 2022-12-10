@@ -840,7 +840,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _scs
   \*******************************/
 /***/ (() => {
 
-eval("// navbar collapse/collapse.show\r\nconst navbar = document.querySelector(\".navbar\");\r\nconst navbarSupportedContent = document.getElementById(\r\n  \"navbar-supported-content\"\r\n);\r\nnavbarSupportedContent.addEventListener(\"shown.bs.collapse\", (event) => {\r\n  navbar.classList.remove(\"bg-transparent\");\r\n  navbar.classList.add(\"t-white\");\r\n  navbar.classList.add(\"navbar-border\");\r\n});\r\nnavbarSupportedContent.addEventListener(\"hidden.bs.collapse\", (event) => {\r\n  if (window.scrollY == 0) {\r\n    navbar.classList.remove(\"navbar-border\");\r\n    navbar.classList.remove(\"t-white\");\r\n    navbar.classList.add(\"bg-transparent\");\r\n  }\r\n});\r\n\n\n//# sourceURL=webpack://webpack/./src/js/mavbarWhite.js?");
+eval("const navbar = document.querySelector(\".navbar\");\r\nconst navbarSupportedContent = document.getElementById(\r\n  \"navbar-supported-content\"\r\n);\r\n\r\n// show\r\nnavbarSupportedContent.addEventListener(\"show.bs.collapse\", (event) => {\r\n  navbar.classList.add(\"navbar-border\");\r\n});\r\n\r\n// hide\r\nnavbarSupportedContent.addEventListener(\"hidden.bs.collapse\", (event) => {\r\n  navbar.classList.remove(\"navbar-border\");\r\n});\r\n\n\n//# sourceURL=webpack://webpack/./src/js/mavbarWhite.js?");
 
 /***/ }),
 
