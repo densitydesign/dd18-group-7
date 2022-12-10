@@ -266,18 +266,24 @@ body {
   mix-blend-mode: difference;
 }
 
-.fullscreen-flex-container {
+.fullscreen-flex-container-content {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: stretch;
 }
 
-.btn-strategies {
-  border-left: 0px;
-  border-right: 0px;
+.btn-outline-white {
+  @include button-outline-variant($white);
+}
 
-  border-top: 1px solid $black;
-  border-bottom: 0px;
-  border-radius: 0rem;
+.btn-outline-black {
+  @include button-outline-variant($black);
+  &.btn-strategy {
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 1px solid $black;
+    border-bottom: 0px;
+    border-radius: 0rem;
+  }
 }
