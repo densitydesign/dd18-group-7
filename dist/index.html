@@ -11,16 +11,16 @@
     <!-- Favicon -->
     <!--<link rel="icon" href="./assets/images/favicon.svg" />-->
   </head>
-  <body class="t-black">
+  <body class="t-black t-filled">
     <nav
-      class="navbar navbar-expand-lg fixed-top navbar-dark bg-transparent t-black"
+      class="navbar navbar-expand-lg fixed-top navbar-dark t-black t-transparent"
     >
       <div class="container-fluid difference">
         <span class="align-middle">
           <a class="navbar-brand" href="./index.html">Automotifs</a></span
         >
         <button
-          class="navbar-toggler p-0 bg-transparent t-black"
+          class="navbar-toggler p-0 t-black t-transparent"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbar-supported-content"
@@ -48,7 +48,8 @@
     <main>
       <div id="ds-parent">
         <div class="ds-container">
-          <section class="d-flex justify-content-center align-items-center p-0">
+          <section class="d-flex justify-content-center align-items-center">
+            <!-- Video background-->
             <div class="fullscreen-video-container">
               <video
                 preload
@@ -56,21 +57,22 @@
                 autoplay
                 loop
                 playsinline
-                class="fullscreen-video"
+                class="fullscreen-video-container-content"
               >
                 <source src="./assets/videos/vehicles.mp4" type="video/mp4" />
                 Your browser doesn't support the video tag.
               </video>
             </div>
 
-            <div class="container-fluid">
+            <!-- Title -->
+            <div class="container-fluid difference">
               <!-- Mobile -->
               <div
                 class="d-lg-none row d-flex justify-content-center align-items-center"
               >
                 <div class="col-12">
-                  <h1 class="display-14 text-center difference">Automotifs</h1>
-                  <h2 class="display-8 text-center difference">
+                  <h1 class="display-14 text-center">Automotifs</h1>
+                  <h2 class="display-8 text-center">
                     Sustainability as seen in car adverts on YouTube
                   </h2>
                 </div>
@@ -80,26 +82,25 @@
                 class="d-none d-lg-block row d-flex justify-content-center align-items-center"
               >
                 <div class="col-12">
-                  <h1 class="display-12 text-center difference">Automotifs</h1>
-                  <h2 class="display-6 text-center difference">
+                  <h1 class="display-12 text-center">Automotifs</h1>
+                  <h2 class="display-6 text-center">
                     Sustainability as seen in car adverts on YouTube
                   </h2>
                 </div>
               </div>
             </div>
           </section>
-          <section class="d-flex justify-content-center align-items-center p-0">
+          <section class="d-flex justify-content-center align-items-center">
             <div
-              class="fullscreen-flex-container d-flex flex-column justify-content-end align-items-stretch"
+              class="d-flex flex-column justify-content-end align-items-stretch fullscreen-flex-container"
             >
-              <div class="fullscreen-flex-container-content">
-                <!-- <div class="fullscreen-text-container d-flex"> -->
+              <div class="fullscreen-flex-container-content difference">
                 <div
-                  class="row d-flex justify-content-between align-items-top px-4 py-3"
+                  class="container-fluid d-flex justify-content-between align-items-top py-3"
                 >
-                  <div class="col-12 col-lg-6 p-0">
+                  <div class="col-12 col-lg-6">
                     <!-- Mobile -->
-                    <p class="d-lg-none display-8 difference">
+                    <p class="d-lg-none display-8">
                       Today, most car brands prefer to use more subtle visual or
                       narrative strategies to associate their models and image
                       to the concept of sustainability in their adverts on
@@ -108,7 +109,7 @@
                       identify them.
                     </p>
                     <!-- Desktop -->
-                    <p class="d-none d-lg-block display-6 difference">
+                    <p class="d-none d-lg-block display-6">
                       Today, most car brands prefer to use more subtle visual or
                       narrative strategies to associate their models and image
                       to the concept of sustainability in their adverts on
@@ -118,7 +119,6 @@
                     </p>
                   </div>
                 </div>
-                <!-- </div> -->
               </div>
             </div>
           </section>
@@ -126,40 +126,43 @@
             <div
               class="fullscreen-flex-container d-flex flex-column justify-content-end align-items-stretch"
             >
-              <div class="fullscreen-flex-container-content">
+              <div class="fullscreen-flex-container-content difference">
+                <div
+                  class="container-fluid d-flex flex-column justify-content-between align-items-start py-3 flex-grow-1"
+                >
                   <div
-                    class="row d-flex justify-content-between align-items-stretch px-4 py-3 flex-grow-1"
+                    class="col-12 col-lg-6 d-flex justify-content-stretch align-items-start flex-grow-1"
                   >
-                    <div class="col-12 col-lg-6 p-0">
-                      <!-- Mobile -->
-                      <p class="d-lg-none display-8 difference">
-                        Automotifs puts on display these exact strategies by
-                        focusing on their peculiarities through supercuts and
-                        video collages.
-                      </p>
-                      <!-- Desktop -->
-                      <p class="d-none d-lg-block display-6 difference">
-                        Automotifs puts on display these exact strategies by
-                        focusing on their peculiarities through supercuts and
-                        video collages.
-                      </p>
-                    </div>
-                    <div
-                      class="col-12 col-lg-6 d-flex justify-content-end align-items-end p-0 flex-grow-1"
+                    <!-- Mobile -->
+                    <p class="d-lg-none display-8">
+                      Automotifs puts on display these exact strategies by
+                      focusing on their peculiarities through supercuts and
+                      video collages.
+                    </p>
+                    <!-- Desktop -->
+                    <p class="d-none d-lg-block display-6">
+                      Automotifs puts on display these exact strategies by
+                      focusing on their peculiarities through supercuts and
+                      video collages.
+                    </p>
+                  </div>
+                  <div
+                    class="col-12 d-flex justify-content-end align-items-end flex-grow-1"
+                  >
+                    <a
+                      href="./strategies.html"
+                      class="btn btn-lg btn-outline-white rounded-pill"
+                      role="button"
                     >
-                      <a
-                        href="./strategies.html"
-                        class="btn btn-lg btn-outline-white rounded-pill m-0 difference"
-                        role="button"
-                      >
-                        <!-- Mobile -->
-                        <span class="d-lg-none display-8">Discover them</span>
-                        <!-- Desktop -->
-                        <span class="lead d-none d-lg-block display-6"
-                          >Discover them</span
-                        ></a
-                      >
-                    </div>
+                      <!-- Mobile -->
+                      <span class="d-lg-none display-8">Discover them</span>
+                      <!-- Desktop -->
+                      <span class="d-none d-lg-block display-6"
+                        >Discover them</span
+                      ></a
+                    >
+                  </div>
+                </div>
               </div>
             </div>
           </section>

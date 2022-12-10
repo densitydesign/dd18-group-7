@@ -174,22 +174,41 @@ $display-font-family: "Review Medium";
 @import "~material-symbols/sharp.css";
 
 // Custom styles
-@mixin theme($c-background-color, $c-color, $c-border-color) {
-  background-color: $c-background-color;
+@mixin theme-color-border-color($c-color, $c-border-color) {
   color: $c-color;
   border-color: $c-border-color;
 }
 
-* {
-  font-family: "Review Regular", sans-serif;
+@mixin theme-background-color($c-background-color) {
+  background-color: $c-background-color;
 }
 
 .t-black {
-  @include theme($black, $white, $white);
+  @include theme-color-border-color($white, $white);
+  &.t-filled {
+    @include theme-background-color($black);
+  }
+  &.t-transparent {
+    @include theme-background-color(transparent);
+  }
 }
 
 .t-white {
-  @include theme($white, $black, $black);
+  @include theme-color-border-color($black, $black);
+  &.t-filled {
+    @include theme-background-color($white);
+  }
+  &.t-transparent {
+    @include theme-background-color(transparent);
+  }
+}
+
+.difference {
+  mix-blend-mode: difference;
+}
+
+* {
+  font-family: "Review Regular", sans-serif;
 }
 
 body {
@@ -234,7 +253,6 @@ body {
 
 .wrap,
 .fullscreen-video-container,
-.fullscreen-text-container,
 .fullscreen-flex-container {
   position: absolute;
   width: 100%;
@@ -256,14 +274,10 @@ body {
   );
 }
 
-.fullscreen-video {
+.fullscreen-video-container-content {
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
-
-.difference {
-  mix-blend-mode: difference;
 }
 
 .fullscreen-flex-container-content {
