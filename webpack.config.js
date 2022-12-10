@@ -3,8 +3,7 @@ const path = require("path");
 module.exports = {
   mode: "development",
   entry: {
-    black: "./src/js/black.js",
-    white: "./src/js/white.js",
+    main: "./src/js/main.js",
     // idealisedLandscapes: "./src/js/idealisedLandscapes.js",
   },
   output: {

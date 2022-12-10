@@ -1,5 +1,5 @@
 // Import custom CSS
-import "../scss/black.scss";
+import "../scss/main.scss";
 
 // Import all of Bootstrap's JS
 import * as bootstrap from "bootstrap";
@@ -19,10 +19,14 @@ const navbarSupportedContent = document.getElementById(
 );
 
 navbarSupportedContent.addEventListener("shown.bs.collapse", function () {
+  navbar.classList.remove("bg-transparent");
+  navbar.classList.add("t-black");
   navbar.classList.add("navbar-border");
 });
 navbarSupportedContent.addEventListener("hidden.bs.collapse", function () {
   if (window.scrollY == 0) {
     navbar.classList.remove("navbar-border");
+    navbar.classList.remove("t-black");
+    navbar.classList.add("bg-transparent");
   }
 });
