@@ -11,139 +11,214 @@
     <!-- Favicon -->
     <!--<link rel="icon" href="./assets/images/favicon.svg" />-->
   </head>
-  <body>
-    <div class="fullscreen-flex-container">
-      <nav class="navbar navbar-expand-lg sticky-top navbar-light flex-grow-0">
-        <div class="container-fluid difference">
-          <span class="align-middle">
-            <a class="navbar-brand" href="./index.html">Automotifs</a></span
-          >
-          <button
-            class="navbar-toggler p-0"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbar-supported-content"
-            aria-controls="navbar-supported-content"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="align-middle material-symbols-sharp">menu</span>
-          </button>
-          <div class="navbar-collapse collapse" id="navbar-supported-content">
-            <div class="navbar-nav mb-0 ms-lg-auto">
-              <a class="nav-link mt-2 mt-lg-0" href="./index.html">Home</a>
-              <a
-                class="nav-link active"
-                aria-current="page"
-                href="./strategies.html"
-                >Strategies</a
-              >
-              <!-- <a class="nav-link" href="./archive.html">Archive</a> -->
-              <a class="nav-link" href="./about.html">About</a>
-            </div>
+  <body class="t-overflow-hidden t-white t-filled">
+    <nav
+      class="navbar navbar-expand-lg fixed-top navbar-light t-white t-filled"
+    >
+      <div class="container-fluid">
+        <span class="align-middle">
+          <a class="navbar-brand" href="./index.html">Automotifs</a></span
+        >
+        <button
+          class="navbar-toggler p-0 t-white t-transparent"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbar-supported-content"
+          aria-controls="navbar-supported-content"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="align-middle material-symbols-sharp">menu</span>
+        </button>
+        <div class="navbar-collapse collapse" id="navbar-supported-content">
+          <div class="navbar-nav mb-0 ms-lg-auto">
+            <a class="nav-link mt-2 mt-lg-0" href="./index.html">Home</a>
+            <a
+              class="nav-link active"
+              aria-current="page"
+              href="./strategies.html"
+              >Strategies</a
+            >
+            <!-- <a class="nav-link" href="./archive.html">Archive</a> -->
+            <a class="nav-link" href="./about.html">About</a>
           </div>
         </div>
-      </nav>
+      </div>
+    </nav>
+    <div
+      class="fullscreen-flex-container d-flex flex-column justify-content-end align-items-stretch"
+    >
+      <div class="fullscreen-flex-container-content">
+        <main
+          class="d-flex flex-column justify-content-between align-items-stretch m-0 p-0 flex-grow-1"
+        >
+          <!-- Video background-->
+          <div class="video-wrapper flex-grow-1">
+            <video
+              preload
+              muted
+              autoplay
+              loop
+              playsinline
+              class="fullscreen-video-container-content"
+            >
+              <source src="./assets/videos/vehicles.mp4" type="video/mp4" />
+              Your browser doesn't support the video tag.
+            </video>
+          </div>
+          <div class="video-wrapper flex-grow-1">
+            <video
+              preload
+              muted
+              autoplay
+              loop
+              playsinline
+              class="fullscreen-video-container-content"
+            >
+              <source src="./assets/videos/vehicles.mp4" type="video/mp4" />
+              Your browser doesn't support the video tag.
+            </video>
+          </div>
+          <div class="video-wrapper flex-grow-1">
+            <video
+              preload
+              muted
+              autoplay
+              loop
+              playsinline
+              class="fullscreen-video-container-content"
+            >
+              <source src="./assets/videos/vehicles.mp4" type="video/mp4" />
+              Your browser doesn't support the video tag.
+            </video>
+          </div>
+          <div class="video-wrapper flex-grow-1">
+            <video
+              preload
+              muted
+              autoplay
+              loop
+              playsinline
+              class="fullscreen-video-container-content"
+            >
+              <source src="./assets/videos/vehicles.mp4" type="video/mp4" />
+              Your browser doesn't support the video tag.
+            </video>
+          </div>
+          <div class="video-wrapper flex-grow-1">
+            <video
+              preload
+              muted
+              autoplay
+              loop
+              playsinline
+              class="fullscreen-video-container-content"
+            >
+              <source src="./assets/videos/vehicles.mp4" type="video/mp4" />
+              Your browser doesn't support the video tag.
+            </video>
+          </div>
+          <!-- 
+          <button
+            type="button"
+            class="btn btn-outline-black btn-strategy flex-grow-1"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+            id="btn-pristine-environments"
+          >
 
-      <main
-        class="d-flex flex-column justify-content-between align-items-stretch m-0 p-0 flex-grow-1"
-      >
-        <button
-          type="button"
-          class="btn-strategies btn btn-outline-dark flex-grow-1"
-          data-bs-toggle="modal"
-          data-bs-target="#exampleModal"
-        >
-          Pristine environments
-        </button>
-        <button
-          type="button"
-          class="btn-strategies btn btn-outline-dark flex-grow-1"
-          data-bs-toggle="modal"
-          data-bs-target="#exampleModal"
-        >
-          Rethinking the future
-        </button>
-        <button
-          type="button"
-          class="btn-strategies btn btn-outline-dark flex-grow-1"
-          data-bs-toggle="modal"
-          data-bs-target="#exampleModal"
-        >
-          Green lifestyles
-        </button>
-        <button
-          type="button"
-          class="btn-strategies btn btn-outline-dark flex-grow-1"
-          data-bs-toggle="modal"
-          data-bs-target="#exampleModal"
-        >
-          Green metaphors
-        </button>
-        <button
-          type="button"
-          class="btn-strategies btn btn-outline-dark flex-grow-1"
-          data-bs-toggle="modal"
-          data-bs-target="#exampleModal"
-        >
-          Regulatory statements
-        </button>
-      </main>
+            Pristine environments
+          </button> 
+          <button
+            type="button"
+            class="btn btn-outline-black btn-strategy flex-grow-1"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          >
+            Rethinking the future
+          </button>
+          <button
+            type="button"
+            class="btn btn-outline-black btn-strategy flex-grow-1"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          >
+            Green lifestyles
+          </button>
+          <button
+            type="button"
+            class="btn btn-outline-black btn-strategy flex-grow-1"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          >
+            Green metaphors
+          </button>
+          <button
+            type="button"
+            class="btn btn-outline-black btn-strategy flex-grow-1"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          >
+            Regulatory statements
+          </button>
+          -->
+        </main>
 
-      <div class="modal fade" id="exampleModal" tabindex="-1">
-        <div class="modal-dialog modal-dialog-scrollable modal-fullscreen">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title">Modal title</h5>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div class="modal-body">
-              <p>long description long description long description</p>
-              <p>long description long description long description</p>
-              <p>long description long description long description</p>
-              <p>long description long description long description</p>
-              <p>long description long description long description</p>
-              <p>long description long description long description</p>
-              <p>long description long description long description</p>
-              <p>long description long description long description</p>
-              <p>long description long description long description</p>
-              <p>long description long description long description</p>
-              <p>long description long description long description</p>
-              <p>long description long description long description</p>
-              <p>long description long description long description</p>
-              <p>long description long description long description</p>
-              <p>long description long description long description</p>
-              <p>long description long description long description</p>
-              <p>long description long description long description</p>
-              <p>long description long description long description</p>
-              <p>long description long description long description</p>
-              <p>long description long description long description</p>
-              <p>long description long description long description</p>
-              <p>long description long description long description</p>
-              <p>long description long description long description</p>
-              <p>long description long description long description</p>
-            </div>
-            <div class="modal-footer">
-              <button
-                type="button"
-                class="btn btn-secondary"
-                data-bs-dismiss="modal"
-              >
-                Close
-              </button>
-              <button type="button" class="btn btn-primary">
-                Save changes
-              </button>
+        <div class="modal fade" id="exampleModal" tabindex="-1">
+          <div class="modal-dialog modal-dialog-scrollable modal-fullscreen">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Modal title</h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <p>long description long description long description</p>
+                <p>long description long description long description</p>
+                <p>long description long description long description</p>
+                <p>long description long description long description</p>
+                <p>long description long description long description</p>
+                <p>long description long description long description</p>
+                <p>long description long description long description</p>
+                <p>long description long description long description</p>
+                <p>long description long description long description</p>
+                <p>long description long description long description</p>
+                <p>long description long description long description</p>
+                <p>long description long description long description</p>
+                <p>long description long description long description</p>
+                <p>long description long description long description</p>
+                <p>long description long description long description</p>
+                <p>long description long description long description</p>
+                <p>long description long description long description</p>
+                <p>long description long description long description</p>
+                <p>long description long description long description</p>
+                <p>long description long description long description</p>
+                <p>long description long description long description</p>
+                <p>long description long description long description</p>
+                <p>long description long description long description</p>
+                <p>long description long description long description</p>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+                <button type="button" class="btn btn-primary">
+                  Save changes
+                </button>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <script src="./main.js"></script>
+    <script src="./strategies.js"></script>
   </body>
 </html>
