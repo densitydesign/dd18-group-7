@@ -1,4 +1,4 @@
-# An highway to greenness. Analysing green narratives in car brands' adverts
+# Automotifs · Sustainability as seen in car adverts on YouTube
 
 Phase 2.2 · Data Publics[^1].
 
