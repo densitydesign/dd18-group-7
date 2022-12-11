@@ -830,17 +830,17 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _scss_main_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../scss/main.scss */ \"./src/scss/main.scss\");\n/* harmony import */ var bootstrap__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! bootstrap */ \"./node_modules/bootstrap/dist/js/bootstrap.esm.js\");\n// Import custom CSS\r\n\r\n\r\n// Import all of Bootstrap's JS\r\n\r\n\r\nconst navbar = document.querySelector(\".navbar\");\r\nconst fullscreenFlexContainerContentAll = document.querySelectorAll(\r\n  \".fullscreen-flex-container-content\"\r\n);\r\n\r\n// Responsive content layout\r\nfullscreenFlexContainerContentAll.forEach((fullscreenFlexContainerContent) => {\r\n  fullscreenFlexContainerContent.style.height =\r\n    window.innerHeight - navbar.offsetHeight + \"px\";\r\n});\r\nwindow.addEventListener(\"resize\", (event) => {\r\n  fullscreenFlexContainerContentAll.forEach(\r\n    (fullscreenFlexContainerContent) => {\r\n      fullscreenFlexContainerContent.style.height =\r\n        window.innerHeight - navbar.offsetHeight + \"px\";\r\n    }\r\n  );\r\n});\r\n\n\n//# sourceURL=webpack://webpack/./src/js/main.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _scss_main_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../scss/main.scss */ \"./src/scss/main.scss\");\n/* harmony import */ var bootstrap__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! bootstrap */ \"./node_modules/bootstrap/dist/js/bootstrap.esm.js\");\n// Import custom CSS\r\n\r\n\r\n// Import all of Bootstrap's JS\r\n\r\n\n\n//# sourceURL=webpack://webpack/./src/js/main.js?");
 
 /***/ }),
 
-/***/ "./src/js/mavbarWhite.js":
-/*!*******************************!*\
-  !*** ./src/js/mavbarWhite.js ***!
-  \*******************************/
+/***/ "./src/js/relativeFullscreenSizing.js":
+/*!********************************************!*\
+  !*** ./src/js/relativeFullscreenSizing.js ***!
+  \********************************************/
 /***/ (() => {
 
-eval("const navbar = document.querySelector(\".navbar\");\r\nconst navbarSupportedContent = document.getElementById(\r\n  \"navbar-supported-content\"\r\n);\r\n\r\n// show\r\nnavbarSupportedContent.addEventListener(\"show.bs.collapse\", (event) => {\r\n  navbar.classList.add(\"navbar-border\");\r\n});\r\n\r\n// hide\r\nnavbarSupportedContent.addEventListener(\"hidden.bs.collapse\", (event) => {\r\n  navbar.classList.remove(\"navbar-border\");\r\n});\r\n\n\n//# sourceURL=webpack://webpack/./src/js/mavbarWhite.js?");
+eval("const navbar = document.querySelector(\".navbar\");\r\nconst fullscreenFlexContainerContentAll = document.querySelectorAll(\r\n  \".fullscreen-flex-container-content\"\r\n);\r\n\r\n// Responsive content layout\r\nfullscreenFlexContainerContentAll.forEach((fullscreenFlexContainerContent) => {\r\n  fullscreenFlexContainerContent.style.height =\r\n    window.innerHeight - navbar.offsetHeight + \"px\";\r\n});\r\nwindow.addEventListener(\"resize\", (event) => {\r\n  fullscreenFlexContainerContentAll.forEach(\r\n    (fullscreenFlexContainerContent) => {\r\n      fullscreenFlexContainerContent.style.height =\r\n        window.innerHeight - navbar.offsetHeight + \"px\";\r\n    }\r\n  );\r\n});\r\n\n\n//# sourceURL=webpack://webpack/./src/js/relativeFullscreenSizing.js?");
 
 /***/ }),
 
@@ -851,7 +851,7 @@ eval("const navbar = document.querySelector(\".navbar\");\r\nconst navbarSupport
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _main__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./main */ \"./src/js/main.js\");\n/* harmony import */ var _mavbarWhite__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./mavbarWhite */ \"./src/js/mavbarWhite.js\");\n/* harmony import */ var _mavbarWhite__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_mavbarWhite__WEBPACK_IMPORTED_MODULE_1__);\n// Import main.js\r\n\r\n\r\n// Import navbarWhite.js\r\n\r\n\n\n//# sourceURL=webpack://webpack/./src/js/strategies.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _main__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./main */ \"./src/js/main.js\");\n/* harmony import */ var _relativeFullscreenSizing__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./relativeFullscreenSizing */ \"./src/js/relativeFullscreenSizing.js\");\n/* harmony import */ var _relativeFullscreenSizing__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_relativeFullscreenSizing__WEBPACK_IMPORTED_MODULE_1__);\n// Import main.js\r\n\r\n\r\n// Import relativeFullscreenSizing\r\n\r\n\r\n// Navbar\r\nconst navbar = document.querySelector(\".navbar\");\r\nconst navbarSupportedContent = document.getElementById(\r\n  \"navbar-supported-content\"\r\n);\r\n\r\n// show\r\nnavbarSupportedContent.addEventListener(\"show.bs.collapse\", (event) => {\r\n  navbar.classList.add(\"navbar-border\");\r\n});\r\n\r\n// hide\r\nnavbarSupportedContent.addEventListener(\"hidden.bs.collapse\", (event) => {\r\n  navbar.classList.remove(\"navbar-border\");\r\n});\r\n\n\n//# sourceURL=webpack://webpack/./src/js/strategies.js?");
 
 /***/ }),
 
