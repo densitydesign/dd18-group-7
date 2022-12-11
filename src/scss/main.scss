@@ -140,6 +140,8 @@ $spacers: (
   6: $spacer * 6,
 );
 
+$modal-inner-padding: 0;
+
 $display-font-sizes: (
   11: 10rem,
   12: 9.5rem,
@@ -258,7 +260,8 @@ body::-webkit-scrollbar {
   }
 }
 
-.navbar-toggler {
+.navbar-toggler,
+.t-close {
   border: none;
   outline: none;
   &:focus,
@@ -360,4 +363,18 @@ body::-webkit-scrollbar {
 t-sticky-text {
   position: sticky;
   top: 0;
+}
+
+.modal {
+  border: 1px solid $black;
+  border-radius: 1rem;
+}
+
+.modal-body {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.modal-body::-webkit-scrollbar {
+  display: none;
 }
