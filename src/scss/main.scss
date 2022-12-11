@@ -160,6 +160,7 @@ $display-font-sizes: (
   7: 2rem,
   8: 1.5rem,
   9: 1rem,
+  0: 0.75rem,
 );
 
 $display-font-family: "Review Medium";
@@ -213,6 +214,11 @@ $display-font-family: "Review Medium";
 
 * {
   font-family: "Review Regular", sans-serif;
+}
+
+.t-mono {
+  font-family: "Atlas Typewriter Regular";
+  text-transform: uppercase;
 }
 
 html {
@@ -304,12 +310,16 @@ body::-webkit-scrollbar {
 .btn-white-transparent {
   @include button-variant($white, $black, $hover-background: transparent);
   &.btn-strategy {
+    height: 100%;
     color: $white;
     border-left: 0px;
     border-right: 0px;
     border-top: 1px solid $black;
     border-bottom: 0px;
     border-radius: 0px;
+    > div {
+      height: inherit;
+    }
   }
 }
 
@@ -322,19 +332,8 @@ body::-webkit-scrollbar {
 }
 
 .video-wrapper {
-  /* Telling our absolute positioned video to 
-  be relative to this element */
   position: relative;
-
-  // width: 400px;
-  // height: 200px;
-
-  /* Will not allow the video to overflow the 
-  container */
   overflow: hidden;
-
-  /* Centering the container's content vertically 
-  and horizontally */
   text-align: center;
   display: flex;
   align-items: center;
