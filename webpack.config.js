@@ -6,7 +6,7 @@ module.exports = {
     index: "./src/js/index.js",
     strategies: "./src/js/strategies.js",
     about: "./src/js/about.js",
-    // idealisedLandscapes: "./src/js/idealisedLandscapes.js",
+    videoThumbnails: "./src/js/videoThumbnails.js",
   },
   output: {
     filename: "[name].js",

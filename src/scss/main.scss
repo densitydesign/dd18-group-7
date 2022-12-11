@@ -236,7 +236,7 @@ body::-webkit-scrollbar {
 }
 
 .navbar {
-  transition: background 125ms ease-in-out;
+  transition: background 250ms ease-in-out;
 }
 
 .navbar-border {
@@ -245,7 +245,7 @@ body::-webkit-scrollbar {
   border-top: 0px;
   border-bottom: 1px;
   border-style: solid;
-  transition: background 125ms ease-in-out;
+  transition: background 250ms ease-in-out;
 }
 
 .nav-link,
@@ -271,6 +271,7 @@ body::-webkit-scrollbar {
 
 .wrap,
 .fullscreen-video-container,
+.fullscreen-animation-container,
 .fullscreen-flex-container {
   position: absolute;
   width: 100%;
@@ -289,6 +290,22 @@ body::-webkit-scrollbar {
     $black 0%,
     $black 2.5%,
     rgba(255, 0, 0, 0) 100%
+  );
+}
+
+.fullscreen-animation-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(255, 255, 255, 0) 2.5%,
+    rgba(0, 0, 0, 1) 75%,
+    rgba(0, 0, 0, 1) 100%
   );
 }
 
