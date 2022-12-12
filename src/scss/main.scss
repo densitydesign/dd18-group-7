@@ -129,18 +129,12 @@
 }
 
 // Bootstrap overrides
-$spacer: 1rem;
-$spacers: (
-  0: 0,
-  1: $spacer * 0.25,
-  2: $spacer * 0.5,
-  3: $spacer,
-  4: $spacer * 1.5,
-  5: $spacer * 3,
-  6: $spacer * 6,
-);
-
-$modal-inner-padding: 0;
+$font-family-sans-serif: "Review Regular", system-ui, -apple-system, "Segoe UI",
+  Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif,
+  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$font-family-monospace: "Atlas Typewriter Regular", SFMono-Regular, Menlo,
+  Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+$display-font-family: "Review Medium";
 
 $display-font-sizes: (
   11: 10rem,
@@ -165,7 +159,7 @@ $display-font-sizes: (
   0: 0.75rem,
 );
 
-$display-font-family: "Review Medium";
+$modal-inner-padding: 0;
 
 // Import all of Bootstrap's CSS
 @import "~bootstrap/scss/bootstrap";
@@ -176,77 +170,18 @@ $display-font-family: "Review Medium";
 // import material symbols
 @import "~material-symbols/sharp.css";
 
-// Custom styles
-@mixin theme-color-border-color($c-color, $c-border-color) {
-  color: $c-color;
-  border-color: $c-border-color;
+// Bootstrap classes
+.font-monospace {
+  text-transform: uppercase; // text-uppercase
 }
 
-@mixin theme-background-color($c-background-color) {
-  background-color: $c-background-color;
-}
-
-.t-black {
-  @include theme-color-border-color($white, $white);
-  &.t-filled {
-    @include theme-background-color($black);
-  }
-  &.t-transparent {
-    @include theme-background-color(transparent);
-  }
-}
-
-.t-white {
-  @include theme-color-border-color($black, $black);
-  &.t-filled {
-    @include theme-background-color($white);
-  }
-  &.t-transparent {
-    @include theme-background-color(transparent);
-  }
-}
-
-.t-overflow-hidden {
-  overflow: hidden;
-}
-
-.difference {
-  mix-blend-mode: difference;
-}
-
-* {
-  font-family: "Review Regular", sans-serif;
-}
-
-.t-mono {
-  font-family: "Atlas Typewriter Regular";
-  text-transform: uppercase;
-}
-
-html {
-  scrollbar-width: none;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  -ms-overflow-style: none;
-}
-
-body::-webkit-scrollbar {
-  display: none;
+.img-fluid {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 .navbar {
-  transition: background 250ms ease-in-out;
-}
-
-.navbar-border {
-  border-left: 0px;
-  border-right: 0px;
-  border-top: 0px;
-  border-bottom: 1px;
-  border-style: solid;
   transition: background 250ms ease-in-out;
 }
 
@@ -270,6 +205,124 @@ body::-webkit-scrollbar {
     outline: none;
     box-shadow: none;
   }
+}
+
+.modal {
+  border: 1px solid $black;
+  border-radius: 1rem;
+}
+
+.modal-body {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.modal-body::-webkit-scrollbar {
+  display: none;
+}
+
+// Bootstrap extensions
+.btn-white-transparent {
+  @include button-variant($white, $black, $hover-background: transparent);
+  &.btn-strategy {
+    height: 100%;
+    color: $white;
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 1px solid $black;
+    border-bottom: 0px;
+    border-radius: 0px;
+    > div {
+      height: inherit;
+    }
+  }
+}
+
+.btn-outline-white {
+  @include button-outline-variant($white);
+}
+
+.btn-outline-black {
+  @include button-outline-variant($black);
+}
+
+// Custom mixins
+@mixin theme-color-border-color($c-color, $c-border-color) {
+  color: $c-color;
+  border-color: $c-border-color;
+}
+
+@mixin theme-background-color($c-background-color) {
+  background-color: $c-background-color;
+}
+
+// Custom elements
+* {
+  font-family: "Review Regular", sans-serif;
+}
+
+html {
+  scrollbar-width: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  -ms-overflow-style: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+strong {
+  font-family: "Review Heavy";
+}
+
+// Custom classes
+.t-black {
+  @include theme-color-border-color($white, $white);
+  &.t-filled {
+    @include theme-background-color($black);
+  }
+}
+
+.t-white {
+  @include theme-color-border-color($black, $black);
+  &.t-filled {
+    @include theme-background-color($white);
+  }
+}
+
+.t-transparent {
+  @include theme-background-color(transparent);
+}
+
+.t-overflow-hidden {
+  overflow: hidden;
+}
+
+t-sticky-text {
+  position: sticky;
+  top: 0;
+}
+
+.t-mono {
+  font-family: "Atlas Typewriter Regular";
+  text-transform: uppercase;
+}
+
+.difference {
+  mix-blend-mode: difference;
+}
+
+.navbar-border {
+  border-left: 0px;
+  border-right: 0px;
+  border-top: 0px;
+  border-bottom: 1px;
+  border-style: solid;
+  transition: background 250ms ease-in-out;
 }
 
 .wrap,
@@ -327,30 +380,6 @@ body::-webkit-scrollbar {
   align-items: stretch;
 }
 
-.btn-white-transparent {
-  @include button-variant($white, $black, $hover-background: transparent);
-  &.btn-strategy {
-    height: 100%;
-    color: $white;
-    border-left: 0px;
-    border-right: 0px;
-    border-top: 1px solid $black;
-    border-bottom: 0px;
-    border-radius: 0px;
-    > div {
-      height: inherit;
-    }
-  }
-}
-
-.btn-outline-white {
-  @include button-outline-variant($white);
-}
-
-.btn-outline-black {
-  @include button-outline-variant($black);
-}
-
 .video-wrapper {
   position: relative;
   overflow: hidden;
@@ -358,29 +387,4 @@ body::-webkit-scrollbar {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-t-sticky-text {
-  position: sticky;
-  top: 0;
-}
-
-.modal {
-  border: 1px solid $black;
-  border-radius: 1rem;
-}
-
-.modal-body {
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-}
-
-.modal-body::-webkit-scrollbar {
-  display: none;
-}
-
-.img-fluid {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
 }
