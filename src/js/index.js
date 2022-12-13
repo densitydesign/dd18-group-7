@@ -14,6 +14,36 @@ const slide = new DoSlide(".ds-container", {
   minInterval: 50,
 });
 
+const fullscreenAnimationThumbnails = document.getElementById(
+  "fullscreen-animation-thumbnails"
+);
+fullscreenAnimationThumbnails.style.opacity = 0;
+let fullscreenAnimationThumbnailsCounter = 0;
+
+const fullscreenAnimationStrategies = document.getElementById(
+  "fullscreen-animation-strategies"
+);
+fullscreenAnimationStrategies.style.opacity = 0;
+
+// one-time appearances (todo: infinite)
+slide.onBeforeChange(function (curIndex, tarIndex, cur, tar) {
+  if (curIndex == 1) {
+    fullscreenAnimationThumbnailsCounter++;
+    if (fullscreenAnimationThumbnailsCounter < 2) {
+      fullscreenAnimationThumbnails.style.opacity = 1;
+      return false;
+    }
+  }
+  if (curIndex == 2) {
+    fullscreenAnimationStrategies.style.opacity = 1;
+    if (tarIndex == 1) {
+    }
+    if (tarIndex == 3) {
+      return false;
+    }
+  }
+});
+
 // Navbar
 const navbar = document.querySelector(".navbar");
 const navbarSupportedContent = document.getElementById(
