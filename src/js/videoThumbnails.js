@@ -19,7 +19,7 @@ let s = (sk) => {
 
   sk.setup = () => {
     sk.noCanvas();
-    sk.frameRate(90);
+    // sk.frameRate(60);
     sk.noiseSeed(seed);
     sk.noiseDetail(octaves, falloff);
     thumbnails = sk.selectAll(".video-thumbnail");
