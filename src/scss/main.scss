@@ -206,6 +206,9 @@ $display-font-sizes: (
 
 $modal-inner-padding: 0;
 
+$mark-bg: rgb(116, 255, 113);
+$mark-padding: 0em;
+
 // Import all of Bootstrap's CSS
 @import "~bootstrap/scss/bootstrap";
 
@@ -218,6 +221,11 @@ $modal-inner-padding: 0;
 // Bootstrap classes
 .font-monospace {
   text-transform: uppercase; // text-uppercase
+}
+
+.opacity-0,
+.opacity-100 {
+  transition: opacity 250ms ease-in-out;
 }
 
 .img-fluid {
@@ -326,6 +334,19 @@ body::-webkit-scrollbar {
 
 strong {
   font-family: "Review Heavy";
+}
+
+u {
+  font-family: inherit;
+}
+
+.t-highlight {
+  // display: inline-block;
+  // line-height: 0;
+  // padding-top: 0.5em;
+  // padding-bottom: 0.5em;
+  font-family: inherit;
+  transition: background 0.2s ease-in-out;
 }
 
 // Custom classes
