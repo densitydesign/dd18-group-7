@@ -28,7 +28,6 @@ slide.onBeforeChange(function (curIndex, tarIndex, cur, tar) {
     fullscreenAnimationThumbnailsCounter++;
     if (fullscreenAnimationThumbnailsCounter < 2 && tarIndex == 2) {
       fullscreenAnimationThumbnails.classList.add("active");
-      console.log(fullscreenAnimationThumbnails.classList);
       return false;
     }
   }
