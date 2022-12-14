@@ -275,23 +275,189 @@
         <div class="modal fade" id="pristine-environments" tabindex="-1">
           <div class="modal-dialog modal-dialog-scrollable modal-fullscreen">
             <div class="modal-content">
-              <div
-                class="modal-header px-2 pt-2 pb-0 bg-black d-flex justify-content-end align-items-center"
-              >
-                <button
-                  type="button"
-                  class="btn t-close t-black t-transparent m-0 p-0"
-                  data-bs-dismiss="modal"
-                  aria-label="Close"
-                >
-                  <span class="material-symbols-sharp p-0 m-0">close</span>
-                </button>
+              <div class="modal-header border border-white bg-black p-2">
+                <nav class="navbar-expand navbar-black w-100 m-0">
+                  <div
+                    class="navbar-nav justify-content-end align-items-center"
+                  >
+                    <a
+                      class="nav-link font-monospace text-white py-1"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                      href=""
+                      ><span class="material-symbols-sharp align-bottom"
+                        >close</span
+                      ></a
+                    >
+                  </div>
+                </nav>
               </div>
-              <div class="modal-body"></div>
-              <div class="modal-footer p-2 bg-black">
-                <a class="nav-link pe-lg-0 text-white" href="./about.html"
-                  >Discover more about our reserch process</a
+              <div class="modal-body" id="green-metaphors-content">
+                <div
+                  class="container-fluid d-flex flex-column justify-content-between align-items-stretch h-100 bg-black p-0"
                 >
+                  <div
+                    class="container-fluid position-relative overflow-hidden d-flex justify-content-center align-items-center border-start border-end border-white p-0 flex-grow-1"
+                  >
+                    <video
+                      preload
+                      playsinline
+                      controls
+                      class="h-100 w-100"
+                      id="ciao"
+                    >
+                      <source
+                        src="./assets/videos/green-metaphors.mp4"
+                        type="video/mp4"
+                      />
+                      Your browser doesn't support the video tag.
+                    </video>
+                  </div>
+                  <div
+                    class="container-fluid d-flex justify-content-between align-items-end border-top border-start border-end border-white py-4"
+                  >
+                    <div
+                      class="container-fluid d-flex justify-content-between align-items-center p-0"
+                    >
+                      <div
+                        class="container-fluid d-flex justify-content-between align-items-center p-0"
+                      >
+                        <h1 class="display-3 text-white m-0">
+                          Green metaphors
+                        </h1>
+                      </div>
+                      <a
+                        class="nav-link font-monospace text-white py-1"
+                        href="#green-metaphors-copy"
+                        ><span class="material-symbols-sharp align-bottom"
+                          >expand_more</span
+                        ></a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="container-fluid border-top border-start border-end border-black py-4"
+                  id="green-metaphors-copy"
+                >
+                  <div class="row">
+                    <div class="col-12 py-3">
+                      <p class="font-monospace text-uppercase m-0">
+                        Characteristics
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12 col-lg-6 py-3">
+                      <p class="display-7 m-0">
+                        This strategy is about using common rhetorical
+                        techniques (<strong>metaphors</strong>) to
+                        <strong>associate</strong> the characteristics of
+                        <strong>the vehicle to nature</strong>—from animals to
+                        natural phenomena—and
+                        <strong>its driving to sports activities</strong>
+                        carried out <strong>in nature</strong>.
+                      </p>
+                    </div>
+                    <div class="d-none d-lg-block col-6 py-3">
+                      <div class="border h-100 ratio ratio-16x9"></div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="container-fluid border-top border-start border-end border-black py-4"
+                >
+                  <div class="row">
+                    <div class="col-12 col-lg-6 py-3">
+                      <p class="font-monospace text-uppercase m-0">
+                        Where can you identify it?
+                      </p>
+                      <div class="py-3"></div>
+                      <p class="display-7 m-0">
+                        In a single scene or in a sequence of two scenes.
+                      </p>
+                    </div>
+                    <div class="col-12 col-lg-6 py-3">
+                      <div
+                        class="d-flex justify-content-center align-items-center border h-100"
+                      >
+                        <p class="font-monospace text-uppercase text-end m-0">
+                          Check these side-by-side examples
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row py-4">
+                    <div class="col-6">
+                      <img
+                        src="./assets/images/image 16.png"
+                        class="img-fluid"
+                        alt=""
+                      />
+                    </div>
+                    <div class="col-6">
+                      <img
+                        src="./assets/images/image 15.png"
+                        class="img-fluid"
+                        alt=""
+                      />
+                    </div>
+                    <div class="py-3"></div>
+                    <div class="col-6">
+                      <img
+                        src="./assets/images/image 17.png"
+                        class="img-fluid"
+                        alt=""
+                      />
+                    </div>
+                    <div class="col-6">
+                      <img
+                        src="./assets/images/image 18.png"
+                        class="img-fluid"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+                <nav
+                  class="navbar-expand t-white border-top border-start border-end border-black py-4"
+                >
+                  <div class="container-fluid">
+                    <div class="navbar-nav justify-content-end align-items-end">
+                      <!-- Override ignorante sorry not sorry -->
+                      <a
+                        class="nav-link pe-lg-0 text-black"
+                        href="./about.html"
+                        style="font-size: 1rem"
+                        >Discover more about our reserch process</a
+                      >
+                    </div>
+                  </div>
+                </nav>
+              </div>
+              <div class="modal-footer border border-white bg-black p-2">
+                <nav class="navbar-expand navbar-black w-100 m-0">
+                  <div class="container-fluid">
+                    <div
+                      class="navbar-nav justify-content-between align-items-center"
+                    >
+                      <a
+                        class="nav-link font-monospace text-white"
+                        data-bs-target="#green-lifestyles"
+                        data-bs-toggle="modal"
+                        href=""
+                        >Previous strategy</a
+                      >
+                      <a
+                        class="nav-link font-monospace text-white"
+                        data-bs-target="#regulatory-statements"
+                        data-bs-toggle="modal"
+                        href=""
+                        >Next strategy</a
+                      >
+                    </div>
+                  </div>
+                </nav>
               </div>
             </div>
           </div>
@@ -301,23 +467,189 @@
         <div class="modal fade" id="green-lifestyles" tabindex="-1">
           <div class="modal-dialog modal-dialog-scrollable modal-fullscreen">
             <div class="modal-content">
-              <div
-                class="modal-header px-2 pt-2 pb-0 bg-black d-flex justify-content-end align-items-center"
-              >
-                <button
-                  type="button"
-                  class="btn t-close t-black t-transparent m-0 p-0"
-                  data-bs-dismiss="modal"
-                  aria-label="Close"
-                >
-                  <span class="material-symbols-sharp p-0 m-0">close</span>
-                </button>
+              <div class="modal-header border border-white bg-black p-2">
+                <nav class="navbar-expand navbar-black w-100 m-0">
+                  <div
+                    class="navbar-nav justify-content-end align-items-center"
+                  >
+                    <a
+                      class="nav-link font-monospace text-white py-1"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                      href=""
+                      ><span class="material-symbols-sharp align-bottom"
+                        >close</span
+                      ></a
+                    >
+                  </div>
+                </nav>
               </div>
-              <div class="modal-body"></div>
-              <div class="modal-footer p-2 bg-black">
-                <a class="nav-link pe-lg-0 text-white" href="./about.html"
-                  >Discover more about our reserch process</a
+              <div class="modal-body" id="green-metaphors-content">
+                <div
+                  class="container-fluid d-flex flex-column justify-content-between align-items-stretch h-100 bg-black p-0"
                 >
+                  <div
+                    class="container-fluid position-relative overflow-hidden d-flex justify-content-center align-items-center border-start border-end border-white p-0 flex-grow-1"
+                  >
+                    <video
+                      preload
+                      playsinline
+                      controls
+                      class="h-100 w-100"
+                      id="ciao"
+                    >
+                      <source
+                        src="./assets/videos/green-metaphors.mp4"
+                        type="video/mp4"
+                      />
+                      Your browser doesn't support the video tag.
+                    </video>
+                  </div>
+                  <div
+                    class="container-fluid d-flex justify-content-between align-items-end border-top border-start border-end border-white py-4"
+                  >
+                    <div
+                      class="container-fluid d-flex justify-content-between align-items-center p-0"
+                    >
+                      <div
+                        class="container-fluid d-flex justify-content-between align-items-center p-0"
+                      >
+                        <h1 class="display-3 text-white m-0">
+                          Green metaphors
+                        </h1>
+                      </div>
+                      <a
+                        class="nav-link font-monospace text-white py-1"
+                        href="#green-metaphors-copy"
+                        ><span class="material-symbols-sharp align-bottom"
+                          >expand_more</span
+                        ></a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="container-fluid border-top border-start border-end border-black py-4"
+                  id="green-metaphors-copy"
+                >
+                  <div class="row">
+                    <div class="col-12 py-3">
+                      <p class="font-monospace text-uppercase m-0">
+                        Characteristics
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12 col-lg-6 py-3">
+                      <p class="display-7 m-0">
+                        This strategy is about using common rhetorical
+                        techniques (<strong>metaphors</strong>) to
+                        <strong>associate</strong> the characteristics of
+                        <strong>the vehicle to nature</strong>—from animals to
+                        natural phenomena—and
+                        <strong>its driving to sports activities</strong>
+                        carried out <strong>in nature</strong>.
+                      </p>
+                    </div>
+                    <div class="d-none d-lg-block col-6 py-3">
+                      <div class="border h-100 ratio ratio-16x9"></div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="container-fluid border-top border-start border-end border-black py-4"
+                >
+                  <div class="row">
+                    <div class="col-12 col-lg-6 py-3">
+                      <p class="font-monospace text-uppercase m-0">
+                        Where can you identify it?
+                      </p>
+                      <div class="py-3"></div>
+                      <p class="display-7 m-0">
+                        In a single scene or in a sequence of two scenes.
+                      </p>
+                    </div>
+                    <div class="col-12 col-lg-6 py-3">
+                      <div
+                        class="d-flex justify-content-center align-items-center border h-100"
+                      >
+                        <p class="font-monospace text-uppercase text-end m-0">
+                          Check these side-by-side examples
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row py-4">
+                    <div class="col-6">
+                      <img
+                        src="./assets/images/image 16.png"
+                        class="img-fluid"
+                        alt=""
+                      />
+                    </div>
+                    <div class="col-6">
+                      <img
+                        src="./assets/images/image 15.png"
+                        class="img-fluid"
+                        alt=""
+                      />
+                    </div>
+                    <div class="py-3"></div>
+                    <div class="col-6">
+                      <img
+                        src="./assets/images/image 17.png"
+                        class="img-fluid"
+                        alt=""
+                      />
+                    </div>
+                    <div class="col-6">
+                      <img
+                        src="./assets/images/image 18.png"
+                        class="img-fluid"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+                <nav
+                  class="navbar-expand t-white border-top border-start border-end border-black py-4"
+                >
+                  <div class="container-fluid">
+                    <div class="navbar-nav justify-content-end align-items-end">
+                      <!-- Override ignorante sorry not sorry -->
+                      <a
+                        class="nav-link pe-lg-0 text-black"
+                        href="./about.html"
+                        style="font-size: 1rem"
+                        >Discover more about our reserch process</a
+                      >
+                    </div>
+                  </div>
+                </nav>
+              </div>
+              <div class="modal-footer border border-white bg-black p-2">
+                <nav class="navbar-expand navbar-black w-100 m-0">
+                  <div class="container-fluid">
+                    <div
+                      class="navbar-nav justify-content-between align-items-center"
+                    >
+                      <a
+                        class="nav-link font-monospace text-white"
+                        data-bs-target="#green-lifestyles"
+                        data-bs-toggle="modal"
+                        href=""
+                        >Previous strategy</a
+                      >
+                      <a
+                        class="nav-link font-monospace text-white"
+                        data-bs-target="#regulatory-statements"
+                        data-bs-toggle="modal"
+                        href=""
+                        >Next strategy</a
+                      >
+                    </div>
+                  </div>
+                </nav>
               </div>
             </div>
           </div>
@@ -346,15 +678,16 @@
               </div>
               <div class="modal-body" id="green-metaphors-content">
                 <div
-                  class="container-fluid d-flex flex-column justify-content-between align-items-center h-100 bg-black p-0"
+                  class="container-fluid d-flex flex-column justify-content-between align-items-stretch h-100 bg-black p-0"
                 >
                   <div
-                    class="container-fluid d-flex justify-content-center align-items-center border-start border-end border-white position-absolute h-100 w-100 p-0"
+                    class="container-fluid position-relative overflow-hidden d-flex justify-content-center align-items-center border-start border-end border-white p-0 flex-grow-1"
                   >
                     <video
                       preload
                       playsinline
-                      class="fullscreen-video-container-content"
+                      controls
+                      class="h-100 w-100"
                       id="ciao"
                     >
                       <source
@@ -365,61 +698,42 @@
                     </video>
                   </div>
                   <div
-                    class="container-fluid d-flex justify-content-between align-items-end position-absolute h-100 w-100 p-0"
+                    class="container-fluid d-flex justify-content-between align-items-end border-top border-start border-end border-white py-4"
                   >
-                    <button
-                      type="button"
-                      class="btn btn-outline-white-noborder h-100 flex-grow-1 p-0"
-                      id="toggle-fullscreen"
+                    <div
+                      class="container-fluid d-flex justify-content-between align-items-center p-0"
                     >
                       <div
-                        class="container-fluid d-flex justify-content-between align-items-end h-100 w-100 p-4 p-lg-5"
+                        class="container-fluid d-flex justify-content-between align-items-center p-0"
                       >
                         <h1 class="display-3 text-white m-0">
                           Green metaphors
                         </h1>
-                        <h1 class="display-5 m-0">
-                          <span
-                            class="badge rounded-pill text-bg-white display-2"
-                            >Audio</span
-                          >
-                        </h1>
                       </div>
-                    </button>
+                      <a
+                        class="nav-link font-monospace text-white py-1"
+                        href="#green-metaphors-copy"
+                        ><span class="material-symbols-sharp align-bottom"
+                          >expand_more</span
+                        ></a
+                      >
+                    </div>
                   </div>
                 </div>
-                <!-- <div class="container-fluid border-top p-4">
-                  <div class="row">
-                    <div class="col-12 col-lg-6">
-                      <p class="font-monospace text-uppercase">The video</p>
-                    </div>
-                    <div class="col-12 col-lg-6">
-                      <p>
-                        This supercut showcases some of the metaphors that
-                        appear in the analysed adverts. We handpicked the most
-                        relevant ones, put the two components of the comparisons
-                        side by side, synchronised them, and finally ordered
-                        them starting from the ones that are more related to
-                        nature in itself to the ones that refer to activities
-                        carried out in nature, to highlight recurrent patterns
-                        and cliches.
-                      </p>
-                    </div>
-                  </div>
-                </div> -->
                 <div
-                  class="container-fluid border-top border-start border-end border-black p-4 p-lg-5"
+                  class="container-fluid border-top border-start border-end border-black py-4"
+                  id="green-metaphors-copy"
                 >
                   <div class="row">
-                    <div class="col-12">
-                      <p class="font-monospace text-uppercase">
+                    <div class="col-12 py-3">
+                      <p class="font-monospace text-uppercase m-0">
                         Characteristics
                       </p>
                     </div>
                   </div>
-                  <div class="row mt-2">
-                    <div class="col-12 col-lg-6">
-                      <p class="display-7">
+                  <div class="row">
+                    <div class="col-12 col-lg-6 py-3">
+                      <p class="display-7 m-0">
                         This strategy is about using common rhetorical
                         techniques (<strong>metaphors</strong>) to
                         <strong>associate</strong> the characteristics of
@@ -429,34 +743,35 @@
                         carried out <strong>in nature</strong>.
                       </p>
                     </div>
-                    <div class="d-none d-lg-block col-6">
+                    <div class="d-none d-lg-block col-6 py-3">
                       <div class="border h-100 ratio ratio-16x9"></div>
                     </div>
                   </div>
                 </div>
                 <div
-                  class="container-fluid border-top border-start border-end border-black p-4 p-lg-5"
+                  class="container-fluid border-top border-start border-end border-black py-4"
                 >
                   <div class="row">
-                    <div class="col-12">
-                      <p class="font-monospace text-uppercase">
+                    <div class="col-12 col-lg-6 py-3">
+                      <p class="font-monospace text-uppercase m-0">
                         Where can you identify it?
                       </p>
-                    </div>
-                  </div>
-                  <div class="row mt-2">
-                    <div class="col-12 col-lg-6">
-                      <p class="display-7">
+                      <div class="py-3"></div>
+                      <p class="display-7 m-0">
                         In a single scene or in a sequence of two scenes.
                       </p>
                     </div>
-                    <div class="d-none d-lg-block col-6">
-                      <p class="font-monospace text-uppercase text-end">
-                        Check these side-by-side examples
-                      </p>
+                    <div class="col-12 col-lg-6 py-3">
+                      <div
+                        class="d-flex justify-content-center align-items-center border h-100"
+                      >
+                        <p class="font-monospace text-uppercase text-end m-0">
+                          Check these side-by-side examples
+                        </p>
+                      </div>
                     </div>
                   </div>
-                  <div class="row mt-4">
+                  <div class="row py-4">
                     <div class="col-6">
                       <img
                         src="./assets/images/image 16.png"
@@ -471,16 +786,15 @@
                         alt=""
                       />
                     </div>
-                  </div>
-                  <div class="row mt-2">
-                    <div class="col-6 mt-3">
+                    <div class="py-3"></div>
+                    <div class="col-6">
                       <img
                         src="./assets/images/image 17.png"
                         class="img-fluid"
                         alt=""
                       />
                     </div>
-                    <div class="col-6 mt-3">
+                    <div class="col-6">
                       <img
                         src="./assets/images/image 18.png"
                         class="img-fluid"
@@ -490,9 +804,9 @@
                   </div>
                 </div>
                 <nav
-                  class="navbar-expand t-white border-top border-start border-end border-black p-4 p-lg-5"
+                  class="navbar-expand t-white border-top border-start border-end border-black py-4"
                 >
-                  <div class="container-fluid p-0">
+                  <div class="container-fluid">
                     <div class="navbar-nav justify-content-end align-items-end">
                       <!-- Override ignorante sorry not sorry -->
                       <a
@@ -537,23 +851,189 @@
         <div class="modal fade" id="regulatory-statements" tabindex="-1">
           <div class="modal-dialog modal-dialog-scrollable modal-fullscreen">
             <div class="modal-content">
-              <div
-                class="modal-header px-2 pt-2 pb-0 bg-black d-flex justify-content-end align-items-center"
-              >
-                <button
-                  type="button"
-                  class="btn t-close t-black t-transparent m-0 p-0"
-                  data-bs-dismiss="modal"
-                  aria-label="Close"
-                >
-                  <span class="material-symbols-sharp p-0 m-0">close</span>
-                </button>
+              <div class="modal-header border border-white bg-black p-2">
+                <nav class="navbar-expand navbar-black w-100 m-0">
+                  <div
+                    class="navbar-nav justify-content-end align-items-center"
+                  >
+                    <a
+                      class="nav-link font-monospace text-white py-1"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                      href=""
+                      ><span class="material-symbols-sharp align-bottom"
+                        >close</span
+                      ></a
+                    >
+                  </div>
+                </nav>
               </div>
-              <div class="modal-body"></div>
-              <div class="modal-footer p-2 bg-black">
-                <a class="nav-link pe-lg-0 text-white" href="./about.html"
-                  >Discover more about our reserch process</a
+              <div class="modal-body" id="green-metaphors-content">
+                <div
+                  class="container-fluid d-flex flex-column justify-content-between align-items-stretch h-100 bg-black p-0"
                 >
+                  <div
+                    class="container-fluid position-relative overflow-hidden d-flex justify-content-center align-items-center border-start border-end border-white p-0 flex-grow-1"
+                  >
+                    <video
+                      preload
+                      playsinline
+                      controls
+                      class="h-100 w-100"
+                      id="ciao"
+                    >
+                      <source
+                        src="./assets/videos/green-metaphors.mp4"
+                        type="video/mp4"
+                      />
+                      Your browser doesn't support the video tag.
+                    </video>
+                  </div>
+                  <div
+                    class="container-fluid d-flex justify-content-between align-items-end border-top border-start border-end border-white py-4"
+                  >
+                    <div
+                      class="container-fluid d-flex justify-content-between align-items-center p-0"
+                    >
+                      <div
+                        class="container-fluid d-flex justify-content-between align-items-center p-0"
+                      >
+                        <h1 class="display-3 text-white m-0">
+                          Green metaphors
+                        </h1>
+                      </div>
+                      <a
+                        class="nav-link font-monospace text-white py-1"
+                        href="#green-metaphors-copy"
+                        ><span class="material-symbols-sharp align-bottom"
+                          >expand_more</span
+                        ></a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="container-fluid border-top border-start border-end border-black py-4"
+                  id="green-metaphors-copy"
+                >
+                  <div class="row">
+                    <div class="col-12 py-3">
+                      <p class="font-monospace text-uppercase m-0">
+                        Characteristics
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12 col-lg-6 py-3">
+                      <p class="display-7 m-0">
+                        This strategy is about using common rhetorical
+                        techniques (<strong>metaphors</strong>) to
+                        <strong>associate</strong> the characteristics of
+                        <strong>the vehicle to nature</strong>—from animals to
+                        natural phenomena—and
+                        <strong>its driving to sports activities</strong>
+                        carried out <strong>in nature</strong>.
+                      </p>
+                    </div>
+                    <div class="d-none d-lg-block col-6 py-3">
+                      <div class="border h-100 ratio ratio-16x9"></div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="container-fluid border-top border-start border-end border-black py-4"
+                >
+                  <div class="row">
+                    <div class="col-12 col-lg-6 py-3">
+                      <p class="font-monospace text-uppercase m-0">
+                        Where can you identify it?
+                      </p>
+                      <div class="py-3"></div>
+                      <p class="display-7 m-0">
+                        In a single scene or in a sequence of two scenes.
+                      </p>
+                    </div>
+                    <div class="col-12 col-lg-6 py-3">
+                      <div
+                        class="d-flex justify-content-center align-items-center border h-100"
+                      >
+                        <p class="font-monospace text-uppercase text-end m-0">
+                          Check these side-by-side examples
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row py-4">
+                    <div class="col-6">
+                      <img
+                        src="./assets/images/image 16.png"
+                        class="img-fluid"
+                        alt=""
+                      />
+                    </div>
+                    <div class="col-6">
+                      <img
+                        src="./assets/images/image 15.png"
+                        class="img-fluid"
+                        alt=""
+                      />
+                    </div>
+                    <div class="py-3"></div>
+                    <div class="col-6">
+                      <img
+                        src="./assets/images/image 17.png"
+                        class="img-fluid"
+                        alt=""
+                      />
+                    </div>
+                    <div class="col-6">
+                      <img
+                        src="./assets/images/image 18.png"
+                        class="img-fluid"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+                <nav
+                  class="navbar-expand t-white border-top border-start border-end border-black py-4"
+                >
+                  <div class="container-fluid">
+                    <div class="navbar-nav justify-content-end align-items-end">
+                      <!-- Override ignorante sorry not sorry -->
+                      <a
+                        class="nav-link pe-lg-0 text-black"
+                        href="./about.html"
+                        style="font-size: 1rem"
+                        >Discover more about our reserch process</a
+                      >
+                    </div>
+                  </div>
+                </nav>
+              </div>
+              <div class="modal-footer border border-white bg-black p-2">
+                <nav class="navbar-expand navbar-black w-100 m-0">
+                  <div class="container-fluid">
+                    <div
+                      class="navbar-nav justify-content-between align-items-center"
+                    >
+                      <a
+                        class="nav-link font-monospace text-white"
+                        data-bs-target="#green-lifestyles"
+                        data-bs-toggle="modal"
+                        href=""
+                        >Previous strategy</a
+                      >
+                      <a
+                        class="nav-link font-monospace text-white"
+                        data-bs-target="#regulatory-statements"
+                        data-bs-toggle="modal"
+                        href=""
+                        >Next strategy</a
+                      >
+                    </div>
+                  </div>
+                </nav>
               </div>
             </div>
           </div>
