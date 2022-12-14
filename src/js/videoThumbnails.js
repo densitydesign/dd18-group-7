@@ -31,7 +31,7 @@ let s = (sk) => {
     iterator++;
     thumbnails.forEach((thumbnail, i) => {
       let x = sk.noise((iterator + 50 * i) / 400);
-      let mapx = sk.map(x, 0, 0.5, 0, 1);
+      let mapx = sk.map(x, 0, 0.6, 0, 1);
       let posx = mapx * (sk.windowWidth - thumbnailWidth);
       let y = sk.noise((iterator - 50 * i) / 400);
       let mapy = sk.map(y, 0, 0.5, 0, 1);
