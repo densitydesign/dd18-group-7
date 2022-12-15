@@ -24,7 +24,77 @@ navbarSupportedContent.addEventListener("hidden.bs.collapse", (event) => {
 //
 
 // Green lifestyles
-//
+let greenLifestylesContentCopyW1 = document.getElementById(
+  "green-lifestyles-content-copy-w1"
+);
+greenLifestylesContentCopyW1.addEventListener("mouseover", (event) => {
+  greenLifestylesContentCopyW1.classList.remove("opacity-0");
+  greenLifestylesContentCopyW1.classList.add("opacity-100");
+});
+greenLifestylesContentCopyW1.addEventListener("mouseleave", (event) => {
+  greenLifestylesContentCopyW1.classList.remove("opacity-100");
+  greenLifestylesContentCopyW1.classList.add("opacity-0");
+});
+
+let greenLifestylesContentCopyW2 = document.getElementById(
+  "green-lifestyles-content-copy-w2"
+);
+greenLifestylesContentCopyW2.addEventListener("mouseover", (event) => {
+  greenLifestylesContentCopyW2.classList.remove("opacity-0");
+  greenLifestylesContentCopyW2.classList.add("opacity-100");
+});
+greenLifestylesContentCopyW2.addEventListener("mouseleave", (event) => {
+  greenLifestylesContentCopyW2.classList.remove("opacity-100");
+  greenLifestylesContentCopyW2.classList.add("opacity-0");
+});
+
+let greenLifestylesContentCopyW3 = document.getElementById(
+  "green-lifestyles-content-copy-w3"
+);
+greenLifestylesContentCopyW3.addEventListener("mouseover", (event) => {
+  greenLifestylesContentCopyW3.classList.remove("opacity-0");
+  greenLifestylesContentCopyW3.classList.add("opacity-100");
+});
+greenLifestylesContentCopyW3.addEventListener("mouseleave", (event) => {
+  greenLifestylesContentCopyW3.classList.remove("opacity-100");
+  greenLifestylesContentCopyW3.classList.add("opacity-0");
+});
+
+let greenLifestylesContentCopyW4 = document.getElementById(
+  "green-lifestyles-content-copy-w4"
+);
+greenLifestylesContentCopyW4.addEventListener("mouseover", (event) => {
+  greenLifestylesContentCopyW4.classList.remove("opacity-0");
+  greenLifestylesContentCopyW4.classList.add("opacity-100");
+});
+greenLifestylesContentCopyW4.addEventListener("mouseleave", (event) => {
+  greenLifestylesContentCopyW4.classList.remove("opacity-100");
+  greenLifestylesContentCopyW4.classList.add("opacity-0");
+});
+
+let greenLifestylesContentCopyW5 = document.getElementById(
+  "green-lifestyles-content-copy-w5"
+);
+greenLifestylesContentCopyW5.addEventListener("mouseover", (event) => {
+  greenLifestylesContentCopyW5.classList.remove("opacity-0");
+  greenLifestylesContentCopyW5.classList.add("opacity-100");
+});
+greenLifestylesContentCopyW5.addEventListener("mouseleave", (event) => {
+  greenLifestylesContentCopyW5.classList.remove("opacity-100");
+  greenLifestylesContentCopyW5.classList.add("opacity-0");
+});
+
+let greenLifestylesContentCopyW6 = document.getElementById(
+  "green-lifestyles-content-copy-w6"
+);
+greenLifestylesContentCopyW6.addEventListener("mouseover", (event) => {
+  greenLifestylesContentCopyW6.classList.remove("opacity-0");
+  greenLifestylesContentCopyW6.classList.add("opacity-100");
+});
+greenLifestylesContentCopyW6.addEventListener("mouseleave", (event) => {
+  greenLifestylesContentCopyW6.classList.remove("opacity-100");
+  greenLifestylesContentCopyW6.classList.add("opacity-0");
+});
 
 // Green metaphors
 //

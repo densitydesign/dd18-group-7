@@ -324,6 +324,23 @@ $mark-padding: 0em;
   background-color: $c-background-color;
 }
 
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-down($breakpoint) {
+    .border-#{$breakpoint}-left-none {
+      border-left: none !important;
+    }
+    .border-#{$breakpoint}-right-none {
+      border-right: none !important;
+    }
+    .border-#{$breakpoint}-top-none {
+      border-top: none !important;
+    }
+    .border-#{$breakpoint}-bottom-none {
+      border-bottom: none !important;
+    }
+  }
+}
+
 // Custom elements
 * {
   font-family: "Review Regular", sans-serif;
