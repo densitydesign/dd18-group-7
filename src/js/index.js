@@ -62,6 +62,14 @@ slide.onChanged(function (curIndex, lastIndex, cur, last) {
   }
 });
 
+slide.onUserSwipe(function (direction) {
+  console.log(direction);
+});
+
+slide.onUserMouseWheel(function (direction) {
+  console.log(direction);
+});
+
 // Navbar
 const navbar = document.querySelector(".navbar");
 const navbarSupportedContent = document.getElementById(
