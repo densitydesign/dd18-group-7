@@ -4,9 +4,12 @@ const videoThumbnail = document.querySelector(".video-thumbnail");
 let thumbnailWidth;
 let thumbnailHeight;
 
+console.log(videoThumbnail);
+
 videoThumbnail.onload = function () {
   thumbnailWidth = videoThumbnail.width;
   thumbnailHeight = videoThumbnail.height;
+  // console.log(thumbnailHeight, thumbnailWidth);
 };
 
 let s = (sk) => {
@@ -32,11 +35,14 @@ let s = (sk) => {
     thumbnails.forEach((thumbnail, i) => {
       let x = sk.noise((iterator + 50 * i) / 400);
       let mapx = sk.map(x, 0, 0.6, 0, 1);
-      let posx = mapx * (sk.windowWidth - thumbnailWidth);
+      // let posx = mapx * (sk.windowWidth - thumbnailWidth);
+      let posx = mapx * (window.innerWidth - thumbnailWidth);
       let y = sk.noise((iterator - 50 * i) / 400);
       let mapy = sk.map(y, 0, 0.5, 0, 1);
-      let posy = mapy * (sk.windowHeight - thumbnailHeight);
+      // let posy = mapy * (sk.windowHeight - thumbnailHeight);
+      let posy = mapy * (window.innerHeight - thumbnailHeight);
       thumbnail.position(posx, posy);
+      // console.log(posx, posy);
     });
   };
 };
@@ -46,4 +52,5 @@ const P5 = new p5(s);
 window.addEventListener("resize", (event) => {
   thumbnailWidth = videoThumbnail.width;
   thumbnailHeight = videoThumbnail.height;
+  //console.log(thumbnailWidth, thumbnailHeight);
 });

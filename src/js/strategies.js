@@ -20,22 +20,16 @@ navbarSupportedContent.addEventListener("hidden.bs.collapse", (event) => {
   navbar.classList.remove("navbar-border");
 });
 
-// Regulatory statements
-let regulatoryStatementsContentCopyU1 = document.getElementById(
-  "regulatory-statements-content-copy-u1"
-);
-let regulatoryStatementsContentCopyU1Image = document.getElementById(
-  "regulatory-statements-content-copy-u1-image"
-);
-regulatoryStatementsContentCopyU1.addEventListener("mouseover", (event) => {
-  regulatoryStatementsContentCopyU1Image.classList.remove("opacity-0");
-  regulatoryStatementsContentCopyU1Image.classList.add("opacity-100");
-});
-regulatoryStatementsContentCopyU1.addEventListener("mouseleave", (event) => {
-  regulatoryStatementsContentCopyU1Image.classList.remove("opacity-100");
-  regulatoryStatementsContentCopyU1Image.classList.add("opacity-0");
-});
+// Pristine environments
+//
 
+// Green lifestyles
+//
+
+// Green metaphors
+//
+
+// Regulatory statements
 let regulatoryStatementsContentCopyW1 = document.getElementById(
   "regulatory-statements-content-copy-w1"
 );
