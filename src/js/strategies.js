@@ -21,7 +21,77 @@ navbarSupportedContent.addEventListener("hidden.bs.collapse", (event) => {
 });
 
 // Pristine environments
-//
+let pristineEnvironmentsContentCopyW1 = document.getElementById(
+  "pristine-environments-content-copy-w1"
+);
+pristineEnvironmentsContentCopyW1.addEventListener("mouseover", (event) => {
+  pristineEnvironmentsContentCopyW1.classList.remove("opacity-0");
+  pristineEnvironmentsContentCopyW1.classList.add("opacity-100");
+});
+pristineEnvironmentsContentCopyW1.addEventListener("mouseleave", (event) => {
+  pristineEnvironmentsContentCopyW1.classList.remove("opacity-100");
+  pristineEnvironmentsContentCopyW1.classList.add("opacity-0");
+});
+
+let pristineEnvironmentsContentCopyW2 = document.getElementById(
+  "pristine-environments-content-copy-w2"
+);
+pristineEnvironmentsContentCopyW2.addEventListener("mouseover", (event) => {
+  pristineEnvironmentsContentCopyW2.classList.remove("opacity-0");
+  pristineEnvironmentsContentCopyW2.classList.add("opacity-100");
+});
+pristineEnvironmentsContentCopyW2.addEventListener("mouseleave", (event) => {
+  pristineEnvironmentsContentCopyW2.classList.remove("opacity-100");
+  pristineEnvironmentsContentCopyW2.classList.add("opacity-0");
+});
+
+let pristineEnvironmentsContentCopyW3 = document.getElementById(
+  "pristine-environments-content-copy-w3"
+);
+pristineEnvironmentsContentCopyW3.addEventListener("mouseover", (event) => {
+  pristineEnvironmentsContentCopyW3.classList.remove("opacity-0");
+  pristineEnvironmentsContentCopyW3.classList.add("opacity-100");
+});
+pristineEnvironmentsContentCopyW3.addEventListener("mouseleave", (event) => {
+  pristineEnvironmentsContentCopyW3.classList.remove("opacity-100");
+  pristineEnvironmentsContentCopyW3.classList.add("opacity-0");
+});
+
+let pristineEnvironmentsContentCopyW4 = document.getElementById(
+  "pristine-environments-content-copy-w4"
+);
+pristineEnvironmentsContentCopyW4.addEventListener("mouseover", (event) => {
+  pristineEnvironmentsContentCopyW4.classList.remove("opacity-0");
+  pristineEnvironmentsContentCopyW4.classList.add("opacity-100");
+});
+pristineEnvironmentsContentCopyW4.addEventListener("mouseleave", (event) => {
+  pristineEnvironmentsContentCopyW4.classList.remove("opacity-100");
+  pristineEnvironmentsContentCopyW4.classList.add("opacity-0");
+});
+
+let pristineEnvironmentsContentCopyW5 = document.getElementById(
+  "pristine-environments-content-copy-w5"
+);
+pristineEnvironmentsContentCopyW5.addEventListener("mouseover", (event) => {
+  pristineEnvironmentsContentCopyW5.classList.remove("opacity-0");
+  pristineEnvironmentsContentCopyW5.classList.add("opacity-100");
+});
+pristineEnvironmentsContentCopyW5.addEventListener("mouseleave", (event) => {
+  pristineEnvironmentsContentCopyW5.classList.remove("opacity-100");
+  pristineEnvironmentsContentCopyW5.classList.add("opacity-0");
+});
+
+let pristineEnvironmentsContentCopyW6 = document.getElementById(
+  "pristine-environments-content-copy-w6"
+);
+pristineEnvironmentsContentCopyW6.addEventListener("mouseover", (event) => {
+  pristineEnvironmentsContentCopyW6.classList.remove("opacity-0");
+  pristineEnvironmentsContentCopyW6.classList.add("opacity-100");
+});
+pristineEnvironmentsContentCopyW6.addEventListener("mouseleave", (event) => {
+  pristineEnvironmentsContentCopyW6.classList.remove("opacity-100");
+  pristineEnvironmentsContentCopyW6.classList.add("opacity-0");
+});
 
 // Green lifestyles
 let greenLifestylesContentCopyW1 = document.getElementById(
@@ -95,9 +165,6 @@ greenLifestylesContentCopyW6.addEventListener("mouseleave", (event) => {
   greenLifestylesContentCopyW6.classList.remove("opacity-100");
   greenLifestylesContentCopyW6.classList.add("opacity-0");
 });
-
-// Green metaphors
-//
 
 // Regulatory statements
 let regulatoryStatementsContentCopyW1 = document.getElementById(

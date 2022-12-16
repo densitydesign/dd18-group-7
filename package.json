@@ -1,7 +1,7 @@
 {
-  "name": "webpack",
-  "description": "Include Bootstrap's source Sass and individual JavaScript plugins with Webpack.",
-  "version": "0.0.0",
+  "name": "automotifs",
+  "description": "Project made during the DensityDesign Final Synthesis Design Studio at the Polytechnic University of Milan",
+  "version": "1.0.0",
   "private": true,
   "stackblitz": {
     "startCommand": "npm start"
