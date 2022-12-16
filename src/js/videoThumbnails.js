@@ -25,7 +25,6 @@ let s = (sk) => {
     sk.noiseSeed(seed);
     sk.noiseDetail(octaves, falloff);
     thumbnails = sk.selectAll(".video-thumbnail");
-
     thumbnails.forEach((thumbnail) => {
       thumbnail.style("position: absolute");
     });
@@ -40,7 +39,6 @@ let s = (sk) => {
       let y = sk.noise((iterator - 50 * i) / 400);
       let mapy = sk.map(y, 0, 0.55, 0.2, 1);
       let posy = mapy * (sk.windowHeight - thumbnailHeight);
-      // console.log(mapx, mapy);
       thumbnail.position(posx, posy);
     });
   };
@@ -51,5 +49,4 @@ const P5 = new p5(s);
 window.addEventListener("resize", (event) => {
   thumbnailWidth = videoThumbnail.width;
   thumbnailHeight = videoThumbnail.height;
-  //console.log(thumbnailWidth, thumbnailHeight);
 });
