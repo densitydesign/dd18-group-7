@@ -129,6 +129,7 @@
 }
 
 // Bootstrap overrides
+// Colours
 $blue: #0d6efd;
 $indigo: #6610f2;
 $purple: #6f42c1;
@@ -174,6 +175,7 @@ $theme-colors: (
   "black": $black,
 );
 
+// Spacing
 $spacer: 1rem;
 $spacers: (
   0: 0,
@@ -185,13 +187,13 @@ $spacers: (
   5: $spacer * 3,
 );
 
+// Typography
 $font-family-sans-serif: "Review Regular", system-ui, -apple-system, "Segoe UI",
   Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif,
   "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 $font-family-monospace: "Atlas Typewriter Regular", SFMono-Regular, Menlo,
   Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 $display-font-family: "Review Medium";
-
 $display-font-sizes: (
   11: 10rem,
   12: 9.5rem,
@@ -215,10 +217,34 @@ $display-font-sizes: (
   0: 0.75rem,
 );
 
+// Modal
 $modal-inner-padding: 0;
 
+// Mark
 $mark-bg: rgb(116, 255, 113);
 $mark-padding: 0em;
+
+// Accordion
+$accordion-padding-y: 1rem;
+$accordion-padding-x: 1.25rem;
+$accordion-color: $black;
+$accordion-border-color: $black;
+$accordion-border-radius: 0;
+$accordion-body-padding-y: $accordion-padding-y;
+$accordion-body-padding-x: $accordion-padding-x;
+$accordion-button-padding-y: $accordion-padding-y;
+$accordion-button-padding-x: $accordion-padding-x;
+$accordion-button-color: $accordion-color;
+$accordion-button-bg: $white; // var(--#{$prefix}accordion-bg);
+// $accordion-transition: $btn-transition, border-radius 0.15s ease;
+$accordion-button-active-bg: $white; // tint-color($component-active-bg, 90%);
+$accordion-button-active-color: shade-color($white, 10%);
+// $accordion-button-focus-border-color: $input-focus-border-color;
+// $accordion-button-focus-box-shadow: none; // $btn-focus-box-shadow;
+
+// Button
+$btn-focus-width: 0; // $input-btn-focus-width;
+// $btn-focus-box-shadow: $input-btn-focus-box-shadow;
 
 // Import all of Bootstrap's CSS
 @import "~bootstrap/scss/bootstrap";
@@ -312,6 +338,12 @@ $mark-padding: 0em;
 
 .btn-outline-black {
   @include button-outline-variant($black);
+}
+
+// ma non si può oh
+.accordion-button:focus {
+  border-width: 0;
+  box-shadow: none;
 }
 
 // Custom mixins
@@ -412,6 +444,14 @@ t-sticky-text {
 
 .difference {
   mix-blend-mode: difference;
+}
+
+.text-indent-5 {
+  text-indent: $spacer * 1.25;
+}
+
+.accordion-button {
+  border-radius: 0 !important;
 }
 
 .navbar-border {
