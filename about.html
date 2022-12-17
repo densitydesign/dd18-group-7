@@ -48,6 +48,7 @@
     </nav>
     <main class="container-fluid">
       <div class="row">
+        <!-- Index -->
         <div
           class="d-flex d-none d-lg-block col-4 sticky-top t-sticky-1 h-100 px-0 border-start"
         >
@@ -77,6 +78,8 @@
             </nav>
           </div>
         </div>
+
+        <!-- Content -->
         <div
           data-bs-spy="scroll"
           data-bs-target="#navbar-example3"
@@ -84,6 +87,7 @@
           class="scrollspy-example-2 col-12 col-lg-8 pb-5 px-0 border-start border-black"
           tabindex="0"
         >
+          <!-- The project -->
           <div id="item-1">
             <div
               class="d-flex py-3 sticky-top t-sticky-1 bg-white border-bottom border-black"
@@ -95,7 +99,7 @@
             </div>
             <div class="container-fluid col-12 py-3">
               <div class="row">
-                <div class="col-12 col-lg-9">
+                <div class="col-12 col-lg-9 pe-lg-15">
                   <p class="fs-5 m-0">
                     This project was created during the DensityDesign Final
                     Synthesis Design Studio course of the Master's Degree in
@@ -144,6 +148,8 @@
               </div>
             </div>
           </div>
+
+          <!-- How did we select the adverts? -->
           <div id="item-2">
             <div
               class="d-flex py-3 sticky-top t-sticky-1 bg-white border-bottom border-black"
@@ -156,7 +162,7 @@
             </div>
             <div class="container-fluid col-12 py-3">
               <div class="row">
-                <div class="col-12 col-lg-9">
+                <div class="col-12 col-lg-9 pe-lg-15">
                   <p class="fs-5 m-0">
                     We analysed the adverts published before the end of the
                     second financial quarter of 2021 of 30 petrol (a.k.a.
@@ -164,7 +170,7 @@
                     electric or HE) and 30 electric (a.k.a. battery electric or
                     BE) models—for a total of 90 different vehicles.
                   </p>
-                  <p class="fs-5 text-indent-5">
+                  <p class="fs-5 text-indent-5 m-0">
                     The models were selected
                     <mark class="t-highlight"
                       >starting from a ranking of all the ones sold in Europe in
@@ -172,18 +178,23 @@
                     >,
                     <a
                       href="https://carsalesbase.com/european-car-sales-analysis-2021-models/"
+                      class="text-black"
                       >published in an article written by Bart Demandt</a
                     >.
                   </p>
                 </div>
               </div>
               <div class="row">
-                <div class="col-12 col-lg-9">
-                  <div class="accordion" id="accordion-panel-oiginal-ranking">
+                <div class="col-12 col-lg-9 pe-lg-15">
+                  <div
+                    class="accordion my-3"
+                    id="accordion-panel-oiginal-ranking"
+                  >
                     <div class="accordion-item">
+                      <!-- Title -->
                       <h2 class="accordion-header" id="original-ranking-header">
                         <button
-                          class="accordion-button collapsed font-monospace text-uppercase"
+                          class="accordion-button font-monospace text-uppercase py-3 px-25"
                           type="button"
                           data-bs-toggle="collapse"
                           data-bs-target="#original-ranking-content"
@@ -193,9 +204,11 @@
                           The original ranking
                         </button>
                       </h2>
+
+                      <!-- Content -->
                       <div
                         id="original-ranking-content"
-                        class="accordion-collapse collapse show"
+                        class="accordion-collapse collapse"
                         aria-labelledby="original-ranking-header"
                       >
                         <div class="accordion-body p-0">
@@ -209,7 +222,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-12 col-lg-9">
+                <div class="col-12 col-lg-9 pe-lg-15">
                   <p class="fs-5 m-0">
                     To have a comparable set of advertisements from the get-go,
                     we considered only the brands that had a global or a
@@ -230,7 +243,7 @@
                     Limit the number of electric vehicles to a maximum of two
                     for each brand
                   </p>
-                  <p class="fs-5">
+                  <p class="fs-5 m-0">
                     So, we went through the ranking
                     <mark class="t-highlight">from the top</mark> and checked
                     iteratively what kinds of engines were available at the
@@ -244,12 +257,16 @@
                     followed other kinds of formats (like vlogs or premieres).
                   </p>
                 </div>
-                <div class="col-12 col-lg-9">
-                  <div class="accordion" id="accordion-panel-selected-adverts">
+                <div class="col-12 col-lg-9 pe-lg-15">
+                  <div
+                    class="accordion mt-3"
+                    id="accordion-panel-selected-adverts"
+                  >
                     <div class="accordion-item">
+                      <!-- Title -->
                       <h2 class="accordion-header" id="selected-adverts-header">
                         <button
-                          class="accordion-button collapsed font-monospace text-uppercase"
+                          class="accordion-button font-monospace text-uppercase py-3 px-25"
                           type="button"
                           data-bs-toggle="collapse"
                           data-bs-target="#selected-adverts-content"
@@ -259,9 +276,11 @@
                           The selected adverts
                         </button>
                       </h2>
+
+                      <!-- Content -->
                       <div
                         id="selected-adverts-content"
-                        class="accordion-collapse collapse show"
+                        class="accordion-collapse collapse"
                         aria-labelledby="selected-adverts-header"
                       >
                         <div class="accordion-body p-0">
@@ -279,6 +298,8 @@
               </div>
             </div>
           </div>
+
+          <!-- How did we identify the strategies? -->
           <div id="item-3">
             <div
               class="d-flex py-3 sticky-top t-sticky-1 bg-white border-bottom border-black"
@@ -291,17 +312,19 @@
             </div>
             <div class="container-fluid col-12 py-3">
               <div class="row">
-                <div class="col-12 col-lg-9">
-                  <p class="fs-5">
+                <div class="col-12 col-lg-9 pe-lg-15">
+                  <p class="fs-5 m-0">
                     After having defined a list of videos, we analysed them one
                     by one, and compiled a
                     <a
                       href="https://www.collinsdictionary.com/dictionary/english/storyboard"
+                      class="text-black"
                       >storyboard</a
                     >
                     for each one of them. Therefore, for each
                     <a
                       href="https://www.collinsdictionary.com/dictionary/english/sequence"
+                      class="text-black"
                       >sequence</a
                     >, we <mark class="t-highlight">described</mark> the visual,
                     audio and textual content and
@@ -323,16 +346,17 @@
                     >.
                   </p>
                 </div>
-                <div class="col-12 col-lg-9">
-                  <div class="accordion" id="accordion-panel-strategies">
+                <div class="col-12 col-lg-9 pe-lg-15">
+                  <div class="accordion mt-3" id="accordion-panel-strategies">
                     <!-- Pristine environments -->
                     <div class="accordion-item">
+                      <!-- Title -->
                       <h2
                         class="accordion-header"
                         id="pristine-environments-header"
                       >
                         <button
-                          class="accordion-button collapsed font-monospace text-uppercase"
+                          class="accordion-button font-monospace text-uppercase py-3 px-25"
                           type="button"
                           data-bs-toggle="collapse"
                           data-bs-target="#pristine-environments-content"
@@ -342,68 +366,112 @@
                           Pristine environments
                         </button>
                       </h2>
+
+                      <!-- Content -->
                       <div
                         id="pristine-environments-content"
-                        class="accordion-collapse collapse show"
+                        class="accordion-collapse collapse"
                         aria-labelledby="pristine-environments-header"
                       >
-                        <div class="accordion-body">
-                          <p>Our interpretation</p>
-                          <p>
-                            This strategy can be usually found in shots that
-                            focus on the vehicles by themselves. It is related
-                            to the way in which the surroundings are presented.
-                            More particularly, they are often stereotypical or
-                            de-anthropised environments that range from natural,
-                            wild and adventurous landscapes (with the vehicles
-                            perfectly integrated as a part of them), to glossy,
-                            futuristic or urbanised settings. They are also
-                            almost always devoid of people.
-                          </p>
-                          <p>
-                            These environments could be leveraged by car brands
-                            to associate their vehicles to some or all of their
-                            qualities, thus implicitly promoting them as less
-                            impactful and detaching them from the contexts in
-                            which they are used.
-                          </p>
-                          <p>The video</p>
-                          <p>
-                            The supercut showcases the different surrounding
-                            environments that we found in the analysed adverts,
-                            starting from the wildest one to the most urbanised,
-                            to highlight recurrent patterns and cliches. The
-                            cars were removed from the clips to help the viewer
-                            focus their eyes on them.
-                          </p>
-                          <p>
-                            To make it, we categorised all the environments that
-                            appeared in the selected videos based on a series of
-                            descriptive tags.
-                          </p>
-                          <p>Dataset</p>
-                          <p>
-                            Starting from there, we defined a composition to
-                            follow in the montage (desert, snow, mountains, lush
-                            forests, bridges, cities by day, cities by night,
-                            and finally places featuring strong or flickering
-                            lights). So, we cut and hand-picked the clips that
-                            better represented these scenarios with Adobe
-                            Premiere, and then brought the resulting montage
-                            over to Adobe After Effects, where we used the
-                            “content fill” option to mask the cars with the
-                            surrounding environments.
-                          </p>
-                          <p>Screens</p>
+                        <div class="accordion-body p-0">
+                          <div class="container-fluid py-3">
+                            <div class="row">
+                              <div class="col-12 col-lg-9">
+                                <p class="m-0">
+                                  This strategy can be usually found in shots
+                                  that focus on the vehicles by themselves. It
+                                  is related to the way in which the
+                                  surroundings are presented. More particularly,
+                                  they are often stereotypical or de-anthropised
+                                  environments that range from natural, wild and
+                                  adventurous landscapes (with the vehicles
+                                  perfectly integrated as a part of them), to
+                                  glossy, futuristic or urbanised settings. They
+                                  are also almost always devoid of people.
+                                </p>
+                                <p class="text-indent-6 m-0">
+                                  <mark class="t-highlight"
+                                    >These environments could be leveraged by
+                                    car brands to associate their vehicles to
+                                    some or all of their qualities</mark
+                                  >, thus implicitly promoting them as less
+                                  impactful and detaching them from the contexts
+                                  in which they are used.
+                                </p>
+                                <p class="text-indent-6 m-0">
+                                  The supercut showcases the different
+                                  surrounding environments that we found in the
+                                  analysed adverts, starting
+                                  <mark class="t-highlight"
+                                    >from the wildest one to the most
+                                    urbanised</mark
+                                  >, to highlight recurrent patterns and
+                                  cliches. The cars were removed from the clips
+                                  to help the viewer focus their eyes on them.
+                                </p>
+                                <p class="text-indent-6 m-0">
+                                  To make it, we
+                                  <mark class="t-highlight">categorised</mark>
+                                  all the environments that appeared in the
+                                  selected videos based on a series of
+                                  <mark class="t-highlight"
+                                    >descriptive tags</mark
+                                  >.
+                                </p>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-12 col-lg-9 offset-lg-3">
+                                <div
+                                  class="ratio ratio-16x9 border border-black my-3"
+                                ></div>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-12 col-lg-9">
+                                <p class="m-0">
+                                  Starting from there,
+                                  <mark class="t-highlight"
+                                    >we defined a composition</mark
+                                  >
+                                  to follow in the montage (desert, snow,
+                                  mountains, lush forests, bridges, cities by
+                                  day, cities by night, and finally places
+                                  featuring strong or flickering lights). So, we
+                                  cut and hand-picked the clips that better
+                                  represented these scenarios with
+                                  <mark class="t-highlight">Adobe Premiere</mark
+                                  >, and then brought the resulting montage over
+                                  to
+                                  <mark class="t-highlight"
+                                    >Adobe After Effects</mark
+                                  >, where we used the
+                                  <mark class="t-highlight"
+                                    >"content fill"</mark
+                                  >
+                                  option to mask the cars with the surrounding
+                                  environments.
+                                </p>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-12 col-lg-9 offset-lg-3">
+                                <div
+                                  class="ratio ratio-16x9 border border-black mt-3"
+                                ></div>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
 
                     <!-- Green lifestyles -->
                     <div class="accordion-item">
+                      <!-- Title -->
                       <h2 class="accordion-header" id="green-lifestyles-header">
                         <button
-                          class="accordion-button collapsed font-monospace text-uppercase"
+                          class="accordion-button font-monospace text-uppercase py-3 px-25"
                           type="button"
                           data-bs-toggle="collapse"
                           data-bs-target="#green-lifestyles-content"
@@ -413,71 +481,114 @@
                           Green lifestyles
                         </button>
                       </h2>
+
+                      <!-- Content -->
                       <div
                         id="green-lifestyles-content"
                         class="accordion-collapse collapse"
                         aria-labelledby="green-lifestyles-header"
                       >
-                        <div class="accordion-body">
-                          <p>Our interpretation</p>
-                          <p>
-                            This strategy can be usually found in single shots
-                            or in a sequence of them, either from the visuals or
-                            the audio. It is related to the characters present
-                            in the adverts, who either showcase their efforts to
-                            live more sustainably (like consuming responsibly),
-                            or just carry out activities somewhat related to
-                            nature and sustainability (like camping, hiking,
-                            etc.).
-                          </p>
-                          <p>
-                            These references could be leveraged by car brands to
-                            distance themselves from taking responsibility for
-                            their footprint, and thus redirecting it towards the
-                            customers, or also highlighting how the advertised
-                            vehicles can be a means to “greenify” one's
-                            lifestyle.
-                          </p>
-                          <p>The video</p>
-                          <p>
-                            This supercut showcases the various role models and
-                            people that perform as characters in the adverts,
-                            and more specifically how their actions and
-                            habits—like consuming responsibly, camping, hiking,
-                            etc.—are somehow linked to some extent to the
-                            advertised vehicle.
-                          </p>
-                          <p>
-                            To make it, we categorised the videos in which one
-                            or more of the featured characters are linked to
-                            some level to the idea of sustainability, either
-                            verbally or visually. Then, we specified what
-                            stereotypes or activities they enact with a series
-                            of descriptive tags.
-                          </p>
-                          <p>Dataset</p>
-                          <p>
-                            Starting from there, we defined a composition to
-                            follow in the montage: from people engaging in
-                            outdoor activities while being surrounded in nature
-                            to influencers who talk about living sustainably.
-                            So, we cut and collected short and representative
-                            segments from these videos with Adobe Premiere.
-                            Then, we merged and exported them to form a
-                            supercut, which was then edited in After Effects,
-                            through which we placed a green bounding box to
-                            highlight the various characters.
-                          </p>
-                          <p>Screens</p>
+                        <div class="accordion-body p-0">
+                          <div class="container-fluid py-3">
+                            <div class="row">
+                              <div class="col-12 col-lg-9">
+                                <p class="m-0">
+                                  This strategy can be usually found in single
+                                  shots or in a sequence of them, either from
+                                  the visuals or the audio. It is related to the
+                                  characters present in the adverts, who either
+                                  showcase their efforts to live more
+                                  sustainably (like consuming responsibly), or
+                                  just carry out activities somewhat related to
+                                  nature and sustainability (like camping,
+                                  hiking, etc.).
+                                </p>
+                                <p class="text-indent-6 m-0">
+                                  <mark class="t-highlight"
+                                    >These references could be leveraged by car
+                                    brands to distance themselves from taking
+                                    responsibility for their footprint</mark
+                                  >, and thus redirecting it towards the
+                                  customers, or also highlighting how the
+                                  advertised vehicles can be a means to
+                                  “greenify” one's lifestyle.
+                                </p>
+                                <p class="text-indent-6 m-0">
+                                  This supercut showcases the various
+                                  <mark class="t-highlight">role models</mark>
+                                  and people that perform as characters in the
+                                  adverts, and more specifically how
+                                  <mark class="t-highlight"
+                                    >their actions and habits</mark
+                                  >—like consuming responsibly, camping, hiking,
+                                  etc.—are somehow linked to some extent to the
+                                  advertised vehicle.
+                                </p>
+                                <p class="text-indent-6 m-0">
+                                  To make it, we
+                                  <mark class="t-highlight">categorised</mark>
+                                  the videos in which one or more of the
+                                  featured characters are linked to some level
+                                  to the idea of sustainability, either verbally
+                                  or visually. Then, we specified what
+                                  stereotypes or activities they enact with a
+                                  series of
+                                  <mark class="t-highlight"
+                                    >descriptive tags</mark
+                                  >.
+                                </p>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-12 col-lg-9 offset-lg-3">
+                                <div
+                                  class="ratio ratio-16x9 border border-black my-3"
+                                ></div>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-12 col-lg-9">
+                                <p class="m-0">
+                                  Starting from there,
+                                  <mark class="t-highlight"
+                                    >we defined a composition</mark
+                                  >
+                                  to follow in the montage: from people engaging
+                                  in outdoor activities while being surrounded
+                                  in nature to influencers who talk about living
+                                  sustainably. So, we cut and collected short
+                                  and representative segments from these videos
+                                  with
+                                  <mark class="t-highlight">Adobe Premiere</mark
+                                  >. Then, we merged and exported them to form a
+                                  supercut, which was then edited in
+                                  <mark class="t-highlight">After Effects</mark
+                                  >, through which we placed a
+                                  <mark class="t-highlight"
+                                    >green bounding box</mark
+                                  >
+                                  to highlight the various characters.
+                                </p>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-12 col-lg-9 offset-lg-3">
+                                <div
+                                  class="ratio ratio-16x9 border border-black mt-3"
+                                ></div>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
 
                     <!-- Green metaphors -->
                     <div class="accordion-item">
+                      <!-- Ttle -->
                       <h2 class="accordion-header" id="green-metaphors-header">
                         <button
-                          class="accordion-button collapsed font-monospace text-uppercase"
+                          class="accordion-button font-monospace text-uppercase py-3 px-25"
                           type="button"
                           data-bs-toggle="collapse"
                           data-bs-target="#green-metaphors-content"
@@ -487,69 +598,112 @@
                           Green metaphors
                         </button>
                       </h2>
+
+                      <!-- Content -->
                       <div
                         id="green-metaphors-content"
                         class="accordion-collapse collapse"
                         aria-labelledby="green-metaphors-header"
                       >
-                        <div class="accordion-body">
-                          <p>Our interpretation</p>
-                          <p>
-                            This strategy can be usually found in a sequence of
-                            two or more shots which are usually close by or
-                            directly one after the other. It is related to the
-                            way in which a common rhetorical technique—the
-                            metaphor—is used. More particularly, metaphors that
-                            link characteristics of the advertised vehicles to
-                            nature—from animals to natural phenomena—or sports
-                            or leisure activities carried out in nature.
-                          </p>
-                          <p>
-                            These metaphors could be leveraged by car brands to
-                            associate their vehicles—typically quite distant
-                            from the concept of “green”—to nature and its
-                            qualities, thus detaching them from the contexts in
-                            which they are used.
-                          </p>
-                          <p>The video</p>
-                          <p>
-                            This supercut showcases the metaphors that appear in
-                            the analysed adverts to associate the
-                            characteristics of the advertised vehicles to nature
-                            or sports or leisure activities carried out in
-                            nature. To highlight the two parts of the
-                            comparisons, the video is made up by two
-                            synchronised series of clips, which start from those
-                            that link the cars to wilderness to daring outdoor
-                            activities.
-                          </p>
-                          <p>
-                            To make it, we categorised the videos featuring cars
-                            which are compared either to boisterous elements of
-                            nature or adventurous activities.
-                          </p>
-                          <p>Dataset</p>
-                          <p>
-                            So, we decided to put the two parts of these
-                            metaphors side by side: on the left, the evocative
-                            reference, and on the right, the cars. This was done
-                            with Adobe Premiere, which helped to match the
-                            timing so that they would be played simultaneously
-                            and in the same time-frame.
-                          </p>
-                          <p>Screens</p>
+                        <div class="accordion-body p-0">
+                          <div class="container-fluid py-3">
+                            <div class="row">
+                              <div class="col-12 col-lg-9">
+                                <p class="m-0">
+                                  This strategy can be usually found in a
+                                  sequence of two or more shots which are
+                                  usually close by or directly one after the
+                                  other. It is related to the way in which a
+                                  common rhetorical technique—the metaphor—is
+                                  used. More particularly, metaphors that link
+                                  characteristics of the advertised vehicles to
+                                  nature—from animals to natural phenomena—or
+                                  sports or leisure activities carried out in
+                                  nature.
+                                </p>
+                                <p class="text-indent-6 m-0">
+                                  <mark class="t-highlight"
+                                    >These metaphors could be leveraged by car
+                                    brands to associate their vehicles</mark
+                                  >—typically quite distant from the concept of
+                                  “green”—<mark class="t-highlight"
+                                    >to nature and its qualities</mark
+                                  >, thus detaching them from the contexts in
+                                  which they are used.
+                                </p>
+                                <p class="text-indent-6 m-0">
+                                  This supercut showcases the
+                                  <mark class="t-highlight">metaphors</mark>
+                                  that appear in the analysed adverts
+                                  <mark class="t-highlight"
+                                    >to associate the characteristics of the
+                                    advertised vehicles to nature or sports or
+                                    leisure activities carried out in
+                                    nature</mark
+                                  >. To highlight the two parts of the
+                                  comparisons, the video is made up by two
+                                  synchronised series of clips, which start from
+                                  those that link the cars to wilderness to
+                                  daring outdoor activities.
+                                </p>
+                                <p class="text-indent-6 m-0">
+                                  To make it, we
+                                  <mark class="t-highlight">categorised</mark>
+                                  the videos featuring cars which are compared
+                                  either to boisterous elements of nature or
+                                  adventurous activities.
+                                </p>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-12 col-lg-9 offset-lg-3">
+                                <div
+                                  class="ratio ratio-16x9 border border-black my-3"
+                                ></div>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-12 col-lg-9">
+                                <p class="m-0">
+                                  So, we decided to put the two parts of these
+                                  metaphors
+                                  <mark class="t-highlight">side by side</mark>
+                                  on the left, the evocative reference, and on
+                                  the right, the cars. This was done with
+                                  <mark class="t-highlight">Adobe Premiere</mark
+                                  >, which helped to match the timing so that
+                                  they would be
+                                  <mark class="t-highlight"
+                                    >played simultaneously</mark
+                                  >
+                                  and
+                                  <mark class="t-highlight"
+                                    >in the same time-frame</mark
+                                  >.
+                                </p>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-12 col-lg-9 offset-lg-3">
+                                <div
+                                  class="ratio ratio-16x9 border border-black mt-3"
+                                ></div>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
 
                     <!-- Regulatory statements -->
                     <div class="accordion-item">
+                      <!-- Title -->
                       <h2
                         class="accordion-header"
                         id="regulatory-statements-header"
                       >
                         <button
-                          class="accordion-button collapsed font-monospace text-uppercase"
+                          class="accordion-button font-monospace text-uppercase py-3 px-25"
                           type="button"
                           data-bs-toggle="collapse"
                           data-bs-target="#regulatory-statements-content"
@@ -559,71 +713,132 @@
                           Regulatory statements
                         </button>
                       </h2>
+
+                      <!-- Content -->
                       <div
                         id="regulatory-statements-content"
                         class="accordion-collapse collapse"
                         aria-labelledby="regulatory-statements-header"
                       >
-                        <div class="accordion-body">
-                          <p>Our interpretation</p>
-                          <p>
-                            This strategy can be usually found in single shots
-                            or in a sequence of them, from the textual content.
-                            It is related to the way in which emissions and
-                            consumption statements are placed in the adverts.
-                            These are generally quite long paragraphs of text
-                            that are put in small areas of the shots, either
-                            with or without darkened backgrounds, and mostly for
-                            a brief time-frame.
-                          </p>
-                          <p>
-                            These statements could be leveraged by car brands to
-                            highlight their environmental credentials by
-                            stressing the fact that they're respecting emissions
-                            standards.
-                          </p>
-                          <p>The video</p>
-                          <p>
-                            This video collage showcases the different
-                            regulatory statements that are featured in the
-                            advertisements in multiple batches. We cut out the
-                            portions that contain them, assembled multiple
-                            scenes, and retained the time they stay on screen to
-                            highlight recurring approaches and highlight the
-                            exceptions to the rule. This last aspect is stressed
-                            by including not just the original screen times, but
-                            also the quantity of words that they got and an
-                            estimated, average time needed to read them.
-                          </p>
-                          <p>
-                            To make it, we selected the videos containing these
-                            statements, and collected representative screenshots
-                            of each one of them. So, we grabbed the text with
-                            OCR and calculated the quantity of words that they
-                            contain. Finally, we measured how much time these
-                            statements stay on screen and the estimated, average
-                            time that it could take to read them with [tool].
-                          </p>
-                          <p>Dataset</p>
-                          <p>
-                            So, from there, we decided to use Adobe After
-                            Effects to start the video with just one clip of a
-                            shot that includes a statement at the bottom of the
-                            frame, coupled with a timer that indicates the
-                            original available screen time in the top-right
-                            corner, followed by a green box that highlights the
-                            content that needs to be read. Then, the shot moves
-                            up in the frame, leaving only the portion that
-                            contains the statement, and thus, space that is
-                            filled by other cut-out clips featuring regulatory
-                            statements, one below each other. Therefore, on the
-                            right side of each clip, the available screen time
-                            to read, the word count, and the average time needed
-                            to read are indicated to show how many of the
-                            adverts—on top of making them small—don't give
-                            enough time to actually read them.
-                          </p>
-                          <p>Screens</p>
+                        <div class="accordion-body p-0">
+                          <div class="container-fluid py-3">
+                            <div class="row">
+                              <div class="col-12 col-lg-9">
+                                <p class="m-0">
+                                  This strategy can be usually found in single
+                                  shots or in a sequence of them, from the
+                                  textual content. It is related to the way in
+                                  which emissions and consumption statements are
+                                  placed in the adverts. These are generally
+                                  quite long paragraphs of text that are put in
+                                  small areas of the shots, either with or
+                                  without darkened backgrounds, and mostly for a
+                                  brief time-frame.
+                                </p>
+                                <p class="text-indent-6 m-0">
+                                  <mark class="t-highlight"
+                                    >These statements could be leveraged by car
+                                    brands to highlight their environmental
+                                    credentials</mark
+                                  >
+                                  by stressing the fact that they're respecting
+                                  emissions standards.
+                                </p>
+                                <p class="text-indent-6 m-0">
+                                  This video collage showcases the different
+                                  <mark class="t-highlight"
+                                    >regulatory statements</mark
+                                  >
+                                  that are featured in the advertisements
+                                  <mark class="t-highlight"
+                                    >in multiple batches</mark
+                                  >. We cut out the portions that contain them,
+                                  assembled multiple scenes, and retained the
+                                  time they stay on screen to highlight
+                                  recurring approaches and highlight the
+                                  exceptions to the rule. This last aspect is
+                                  stressed by including not just the
+                                  <mark class="t-highlight"
+                                    >original screen times</mark
+                                  >, but also the
+                                  <mark class="t-highlight"
+                                    >quantity of words</mark
+                                  >
+                                  that they got and an estimated,
+                                  <mark class="t-highlight"
+                                    >average time needed</mark
+                                  >
+                                  to read them.
+                                </p>
+                                <p class="text-indent-6 m-0">
+                                  To make it, we selected the videos containing
+                                  these statements, and collected representative
+                                  screenshots of each one of them. So, we
+                                  grabbed the text with
+                                  <a
+                                    href="https://en.wikipedia.org/wiki/Optical_character_recognition"
+                                    class="text-black"
+                                    >OCR</a
+                                  >
+                                  and calculated the quantity of words that they
+                                  contain. Finally, we measured how much time
+                                  these statements stay on screen and the
+                                  estimated, average time that it could take to
+                                  read them with [tool].
+                                </p>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-12 col-lg-9 offset-lg-3">
+                                <div
+                                  class="ratio ratio-16x9 border border-black my-3"
+                                ></div>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-12 col-lg-9">
+                                <p class="m-0">
+                                  So, from there, we decided to use
+                                  <mark class="t-highlight"
+                                    >Adobe After Effects</mark
+                                  >
+                                  to start the video with just one clip of a
+                                  shot that includes a statement at the bottom
+                                  of the frame, coupled with a
+                                  <mark class="t-highlight">timer</mark> that
+                                  indicates the original available screen time
+                                  <mark class="t-highlight"
+                                    >in the top-right corner</mark
+                                  >, followed by a green box that highlights the
+                                  content that needs to be read. Then, the shot
+                                  moves up in the frame, leaving only the
+                                  portion that contains the statement, and thus,
+                                  space that is filled by other
+                                  <mark class="t-highlight">cut-out clips</mark>
+                                  featuring regulatory statements,
+                                  <mark class="t-highlight"
+                                    >one below each other</mark
+                                  >. Therefore, on the right side of each clip,
+                                  the available screen time to read, the
+                                  <mark class="t-highlight">word count</mark>,
+                                  and the
+                                  <mark class="t-highlight"
+                                    >average time needed to read</mark
+                                  >
+                                  indicated to show how many of the adverts—on
+                                  top of making them small—don't give enough
+                                  time to actually read them.
+                                </p>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-12 col-lg-9 offset-lg-3">
+                                <div
+                                  class="ratio ratio-16x9 border border-black mt-3"
+                                ></div>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -632,6 +847,8 @@
               </div>
             </div>
           </div>
+
+          <!-- Credits -->
           <div id="item-4">
             <div
               class="d-flex py-3 sticky-top t-sticky-1 bg-white border-bottom border-black"
@@ -643,8 +860,8 @@
               </div>
             </div>
             <div class="container-fluid col-12 pt-3 pb-0">
-              <div class="row">
-                <div class="col-lg-3 h-100">
+              <div class="row px-lg-15">
+                <div class="col-lg-3 h-100 px-lg-15">
                   <div class="ratio ratio-16x9">
                     <img
                       class="img-fluid"
@@ -653,7 +870,7 @@
                   </div>
                   <p class="font-monospace text-uppercase">Andrea Benedetto</p>
                 </div>
-                <div class="col-lg-3 h-100">
+                <div class="col-lg-3 h-100 px-lg-15">
                   <div class="ratio ratio-16x9">
                     <img
                       class="img-fluid"
@@ -662,7 +879,7 @@
                   </div>
                   <p class="font-monospace text-uppercase">Simone Cerea</p>
                 </div>
-                <div class="col-lg-3 h-100">
+                <div class="col-lg-3 h-100 px-lg-15">
                   <div class="ratio ratio-16x9">
                     <img
                       class="img-fluid"
@@ -671,13 +888,13 @@
                   </div>
                   <p class="font-monospace text-uppercase">Camilla Guerci</p>
                 </div>
-                <div class="col-lg-3 h-100">
+                <div class="col-lg-3 h-100 px-lg-15">
                   <div class="ratio ratio-16x9">
                     <img class="img-fluid" src="./assets/images/about/Su.gif" />
                   </div>
                   <p class="font-monospace text-uppercase">Surabhi Gupta</p>
                 </div>
-                <div class="col-lg-3 h-100">
+                <div class="col-lg-3 h-100 px-lg-15">
                   <div class="ratio ratio-16x9">
                     <img
                       class="img-fluid"
@@ -686,7 +903,7 @@
                   </div>
                   <p class="font-monospace text-uppercase">Haleh Nobar</p>
                 </div>
-                <div class="col-lg-3 h-100">
+                <div class="col-lg-3 h-100 px-lg-15">
                   <div class="ratio ratio-16x9">
                     <img
                       class="img-fluid"
@@ -697,7 +914,7 @@
                     Alessandro Pedriali
                   </p>
                 </div>
-                <div class="col-lg-3 h-100">
+                <div class="col-lg-3 h-100 px-lg-15">
                   <div class="ratio ratio-16x9">
                     <img
                       class="img-fluid"
@@ -850,6 +1067,7 @@
         </ul>
       </div>
     </footer>
+
     <script src="./about.js"></script>
   </body>
 </html>
