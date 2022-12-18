@@ -528,6 +528,21 @@ t-sticky-text {
   }
 }
 
+.animation-clips {
+  animation: marquee 20s linear infinite;
+}
+
+/* continuous scrolling text animation */
+@keyframes marquee {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    /* goes to the second span */
+    transform: translate(-50%, 0);
+  }
+}
+
 // DensityDesign footer
 footer img {
   height: 50px;
