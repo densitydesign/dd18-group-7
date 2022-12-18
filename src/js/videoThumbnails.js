@@ -4,6 +4,10 @@ let videoThumbnail;
 let thumbnailWidth;
 let thumbnailHeight;
 
+let strategyClip;
+let strategyClipWidth;
+let strategyClipHeight;
+
 window.onload = (event) => {
   // thank u Luca and Andrea
   videoThumbnail = document.querySelector(".video-thumbnail");
@@ -44,7 +48,40 @@ let s = (sk) => {
   };
 };
 
-const P5 = new p5(s);
+const videoThumbnailsAnimation = new p5(s);
+
+// let t = (sk) => {
+//   let thumbnails;
+//   let iterator = 0;
+//   let seed = 500;
+//   let octaves = 2;
+//   let falloff = 0.2;
+
+//   sk.setup = () => {
+//     sk.noCanvas();
+//     sk.noiseSeed(seed);
+//     sk.noiseDetail(octaves, falloff);
+//     thumbnails = sk.selectAll(".strategy-clip");
+//     thumbnails.forEach((thumbnail) => {
+//       thumbnail.style("position: absolute");
+//     });
+//   };
+
+//   sk.draw = () => {
+//     iterator++;
+//     thumbnails.forEach((thumbnail, i) => {
+//       let x = sk.noise((iterator + 5000 * i) / 400);
+//       let mapx = sk.map(x, 0, 0.55, 0.2, 1);
+//       let posx = mapx * (sk.windowWidth - thumbnailWidth);
+//       let y = sk.noise((iterator - 5000 * i) / 400);
+//       let mapy = sk.map(y, 0, 0.55, 0.2, 1);
+//       let posy = mapy * (sk.windowHeight - thumbnailHeight);
+//       thumbnail.position(posx, posy);
+//     });
+//   };
+// };
+
+// const strategyClipsAnimation = new p5(t);
 
 window.addEventListener("resize", (event) => {
   thumbnailWidth = videoThumbnail.width;
