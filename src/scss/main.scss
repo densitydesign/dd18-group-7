@@ -538,9 +538,9 @@ t-sticky-text {
   }
 }
 
-.animation-clips {
-  animation: marquee 20s linear infinite;
-}
+// .animation-clips {
+//   animation: marquee 20s linear infinite;
+// }
 
 /* continuous scrolling text animation */
 @keyframes marquee {

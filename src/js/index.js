@@ -7,6 +7,9 @@ import "./relativeFullscreenSizing";
 // Import do-slide's JS
 import DoSlide from "do-slide";
 
+// Importing fullpage.js
+// import fullpage from 'fullpage.js';
+
 // do-slide setup
 const slide = new DoSlide(".ds-container", {
   duration: 500,
