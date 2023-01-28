@@ -532,7 +532,7 @@ t-sticky-text {
   border-left: 1px solid $black;
 }
 
-@include media-breakpoint-down(md) {
+@include media-breakpoint-down(lg) {
   .border-start-about {
     border-left: none;
   }
