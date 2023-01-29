@@ -1,5 +1,4 @@
 // Fonts
-
 // Review
 @font-face {
   font-family: "Review Thin";
@@ -268,9 +267,6 @@ $btn-focus-width: 0; // $input-btn-focus-width;
 // Import all of Bootstrap's CSS
 @import "~bootstrap/scss/bootstrap";
 
-// Import do-slide's CSS
-@import "~do-slide/dist/do-slide.min.css";
-
 // import material symbols
 @import "~material-symbols/sharp.css";
 
@@ -470,15 +466,13 @@ t-sticky-text {
 }
 
 .wrap,
-.fullscreen-flex-container,
-.fullscreen-video-container,
 .fullscreen-animation-container {
   position: absolute;
   width: 100%;
   height: 100%;
 }
 
-.fullscreen-video-container::after {
+#onboarding-clip::after {
   content: "";
   position: absolute;
   top: 0;
@@ -493,16 +487,8 @@ t-sticky-text {
   );
 }
 
-.fullscreen-flex-container-content {
-  position: absolute;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: stretch;
-}
-
-.fullscreen-animation-container {
+.fullscreen-animation-container,
+#animation-strategies {
   translate: 0 100%;
   opacity: 0;
   transition: translate 500ms cubic-bezier(0.8, 0, 0.2, 1);
@@ -513,10 +499,13 @@ t-sticky-text {
   }
 }
 
-.fullscreen-video-container-content {
-  width: 100%;
-  height: 100%;
+.object-fit-cover {
   object-fit: cover;
+}
+
+// bruh 💀
+div:focus {
+  outline: none;
 }
 
 .video-wrapper {
@@ -535,21 +524,6 @@ t-sticky-text {
 @include media-breakpoint-down(lg) {
   .border-start-about {
     border-left: none;
-  }
-}
-
-// .animation-clips {
-//   animation: marquee 20s linear infinite;
-// }
-
-/* continuous scrolling text animation */
-@keyframes marquee {
-  0% {
-    transform: translate(0, 0);
-  }
-  100% {
-    /* goes to the second span */
-    transform: translate(-50%, 0);
   }
 }
 

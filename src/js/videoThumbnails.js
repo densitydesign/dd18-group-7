@@ -7,15 +7,15 @@ let thumbnailHeight;
 let animationThumbnails = document.getElementById("animation-thumbnails");
 let animationThumbnailsWidth = animationThumbnails.offsetWidth;
 let animationThumbnailsHeight = animationThumbnails.offsetHeight;
-console.log(animationThumbnailsWidth, animationThumbnailsHeight);
+// console.log(animationThumbnailsWidth, animationThumbnailsHeight);
 
 window.onload = (event) => {
   // thank u Luca and Andrea
   videoThumbnail = document.querySelector(".video-thumbnail");
-  console.log(videoThumbnail);
+  // console.log(videoThumbnail);
   thumbnailWidth = videoThumbnail.width;
   thumbnailHeight = videoThumbnail.height;
-  console.log(thumbnailHeight, thumbnailWidth);
+  // console.log(thumbnailHeight, thumbnailWidth);
 };
 
 let s = (sk) => {
@@ -32,8 +32,8 @@ let s = (sk) => {
     thumbnails = document.querySelectorAll(".video-thumbnail");
     thumbnails.forEach((thumbnail) => {
       thumbnail.style.position = "absolute";
-      console.log(thumbnail.offsetTop);
-      console.log(thumbnail.offsetLeft);
+      // console.log(thumbnail.offsetTop);
+      // console.log(thumbnail.offsetLeft);
     });
     // thumbnails = sk.selectAll(".video-thumbnail");
     // thumbnails.forEach((thumbnail) => {
@@ -68,8 +68,8 @@ const videoThumbnailsAnimation = new p5(s);
 window.addEventListener("resize", (event) => {
   thumbnailWidth = videoThumbnail.width;
   thumbnailHeight = videoThumbnail.height;
-  console.log(thumbnailHeight, thumbnailWidth);
+  // console.log(thumbnailHeight, thumbnailWidth);
   animationThumbnailsWidth = animationThumbnails.offsetWidth;
   animationThumbnailsHeight = animationThumbnails.offsetHeight;
-  console.log(animationThumbnailsWidth, animationThumbnailsHeight);
+  // console.log(animationThumbnailsWidth, animationThumbnailsHeight);
 });

@@ -1,18 +1,16 @@
 const navbar = document.querySelector(".navbar");
-const fullscreenFlexContainerContentAll = document.querySelectorAll(
-  ".fullscreen-flex-container-content"
+const fullscreenFlexContainerAll = document.querySelectorAll(
+  ".fullscreen-flex-container"
 );
 
 // Responsive content layout
-fullscreenFlexContainerContentAll.forEach((fullscreenFlexContainerContent) => {
-  fullscreenFlexContainerContent.style.height =
+fullscreenFlexContainerAll.forEach((fullscreenFlexContainer) => {
+  fullscreenFlexContainer.style.height =
     window.innerHeight - navbar.offsetHeight + "px";
 });
 window.addEventListener("resize", (event) => {
-  fullscreenFlexContainerContentAll.forEach(
-    (fullscreenFlexContainerContent) => {
-      fullscreenFlexContainerContent.style.height =
-        window.innerHeight - navbar.offsetHeight + "px";
-    }
-  );
+  fullscreenFlexContainerAll.forEach((fullscreenFlexContainer) => {
+    fullscreenFlexContainer.style.height =
+      window.innerHeight - navbar.offsetHeight + "px";
+  });
 });
