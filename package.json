@@ -1,7 +1,7 @@
 {
   "name": "automotifs",
   "description": "Project made during the DensityDesign Final Synthesis Design Studio at the Polytechnic University of Milan",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "private": true,
   "stackblitz": {
     "startCommand": "npm start"
