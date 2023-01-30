@@ -1,13 +1,13 @@
 // Import main.js
 import "./main";
 
-// Import relativeFullscreenSizing
-import "./relativeFullscreenSizing";
-
 // Import fullpage.js
 import fullpage from "fullpage.js";
 
-// Sections animations
+// Import relativeFullscreenSizing
+import "./relativeFullscreenSizing";
+
+// Sections' animations
 const fullscreenAnimationThumbnails = document.getElementById(
   "animation-thumbnails"
 );
@@ -16,9 +16,11 @@ const fullscreenAnimationStrategies = document.getElementById(
   "animation-strategies"
 );
 let fullscreenAnimationStrategiesCounter = 0;
+let enableScrollingAnimation = false;
+// let enableScrollingNextSection = false; //futureproofing
 
 // fullpage.js setup
-var fullpageInstance = new fullpage("#fullpage", {
+let fullpageInstance = new fullpage("#fullpage", {
   // License and credits
   licenseKey: "gplv3-license",
   credits: {
@@ -29,7 +31,7 @@ var fullpageInstance = new fullpage("#fullpage", {
 
   // Scrolling
   css3: true,
-  scrollingSpeed: 500,
+  scrollingSpeed: 750,
   easingcss3: "cubic-bezier(0.8, 0, 0.2, 1.0)",
   touchSensitivity: 15,
 
@@ -43,14 +45,34 @@ var fullpageInstance = new fullpage("#fullpage", {
   beforeLeave: function (origin, destination, direction, trigger) {
     if (origin.index == 1 && direction == "down") {
       fullscreenAnimationThumbnailsCounter++;
-      if (fullscreenAnimationThumbnailsCounter < 2) {
+
+      // Wait 250 ms before enabling scrolling to the animation
+      setTimeout(() => {
+        enableScrollingAnimation = true;
+      }, 250);
+
+      // If the scrolling isn't enabled, reset the counter for the animation and return false
+      if (enableScrollingAnimation == false) {
+        fullscreenAnimationThumbnailsCounter = 0;
+        return false;
+      } else if (fullscreenAnimationThumbnailsCounter < 2) {
         fullscreenAnimationThumbnails.classList.add("active");
         return false;
       }
     }
     if (origin.index == 2 && direction == "down") {
       fullscreenAnimationStrategiesCounter++;
-      if (fullscreenAnimationStrategiesCounter < 2) {
+
+      // Wait 250 ms before enabling scrolling to the animation
+      setTimeout(() => {
+        enableScrollingAnimation = true;
+      }, 250);
+
+      // If the scrolling isn't enabled, reset the counter for the animation and return false
+      if (enableScrollingAnimation == false) {
+        fullscreenAnimationStrategiesCounter = 0;
+        return false;
+      } else if (fullscreenAnimationStrategiesCounter < 2) {
         fullscreenAnimationStrategies.classList.add("active");
       }
       return false;
@@ -58,17 +80,26 @@ var fullpageInstance = new fullpage("#fullpage", {
   },
   onLeave: function (origin, destination, direction, trigger) {},
   afterLoad: function (origin, destination, direction, trigger) {
-    if (origin.index == 1) {
+    if (destination.index == 0) {
+      console.log(destination.index);
       fullscreenAnimationThumbnails.classList.remove("active");
       fullscreenAnimationThumbnailsCounter = 0;
+      enableScrollingAnimation = false;
+      // enableScrollingNextSection = false;
     }
-    if (origin.index == 2) {
+    if (destination.index == 1) {
+      console.log(destination.index);
       fullscreenAnimationStrategies.classList.remove("active");
       fullscreenAnimationStrategiesCounter = 0;
+      enableScrollingAnimation = false;
+      // enableScrollingNextSection = false;
     }
-    if (origin.index == 3) {
+    if (destination.index == 2) {
+      console.log(destination.index);
       fullscreenAnimationThumbnails.classList.remove("active");
       fullscreenAnimationThumbnailsCounter = 0;
+      enableScrollingAnimation = false;
+      // enableScrollingNextSection = false;
     }
   },
   afterRender: function () {},
@@ -92,7 +123,7 @@ const navbarSupportedContent = document.getElementById(
   "navbar-supported-content"
 );
 
-// Show
+// Show navbar
 navbarSupportedContent.addEventListener("show.bs.collapse", (event) => {
   navbar.classList.remove("t-transparent");
   navbar.classList.remove("difference");
@@ -100,7 +131,7 @@ navbarSupportedContent.addEventListener("show.bs.collapse", (event) => {
   navbar.classList.add("navbar-border");
 });
 
-// Hide
+// Hide navbar
 navbarSupportedContent.addEventListener("hidden.bs.collapse", (event) => {
   navbar.classList.remove("t-filled");
   navbar.classList.remove("navbar-border");
